@@ -50,6 +50,13 @@
 			}
 		}
 	}
+	&.actions-panel{
+		text-align:center;
+		.btn{
+			margin:10px auto;
+			max-width:400px;
+		}
+	}
 }
 
 //overview

@@ -12,7 +12,7 @@ a{
 	border-radius:4px;
 	font-family:$medium-font-name;
 	@include transition-duration($base-transition-duration);
-	padding:10px 16px;
+	padding:12px 16px;
 	&:active{
 		box-shadow:none;
 	}
