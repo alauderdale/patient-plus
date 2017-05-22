@@ -1,0 +1,46 @@
+.panel{
+	box-shadow:none;
+	border:1px solid $border-color;
+}
+
+.panel-chip{
+	border-radius:100px;
+	padding:10px;
+	display:flex;
+	margin-bottom:8px;
+	width:100%;
+
+	.chip-info{
+		display:inline-flex;
+		vertical-align: middle;
+		align-items:center;
+		&:nth-child(1){
+			width:35%;
+			@include breakpoint(md) {
+				width:48%!important;
+			}
+		}
+		&:nth-child(2){
+			width:40%;
+			@include breakpoint(md) {
+				width:49%!important;
+				text-align:right;
+				margin-right:1%;
+			}
+			
+		}
+		&:nth-child(3){
+			width:25%;
+			@include breakpoint(md) {
+				width:100%!important;
+				display:none;
+			}
+		}
+		ul{
+			margin-bottom:0;
+		}
+	}
+	@include breakpoint(md) {
+		display: inline-block;
+	}
+}

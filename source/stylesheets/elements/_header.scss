@@ -1,0 +1,15 @@
+.primary-nav{
+	border-radius:0;
+	border:none;
+	box-shadow:0 1px 0 $light-gray-color;
+	background:white;
+	margin-bottom:0;
+	.navbar-link{
+		color:$text-color;
+		@include fontSize(12px);
+		font-family:$medium-font-name;
+		&:hover{
+			color:tint($text-color,20%);
+		}
+	}
+}

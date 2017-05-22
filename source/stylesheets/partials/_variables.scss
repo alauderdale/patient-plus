@@ -1,0 +1,61 @@
+// color vars
+
+$primary-color: #0797CC;
+$secondary-color: #20C063;
+$tertiary-color: #2f7bbd;
+
+// grays
+$light-gray-color: #E5E5E5;
+$medium-gray-color: #B4B4B4;
+$gray-color: #767676;
+$black-color: #262626;
+
+
+// alerts
+$green-color: #20C063;
+$yellow-color: #ffd266;
+
+$success-color: $green-color;
+$warning-color: $yellow-color;
+
+//text
+$header-text-color: #737E88;
+$text-color: $black-color;
+$light-text-color: $gray-color;
+$body-text-color: $text-color;
+$dark-text-color: $text-color;
+
+
+//borders
+$border-color: $light-gray-color;
+
+
+//links
+$link-color: $primary-color;
+$link-hover-color:shade($secondary-color, 50%);
+
+$background-color: #F4F8F8;
+
+// units
+
+$baseline: 28px;
+$base-border-radius:3px;
+
+
+// font vars
+
+$regular-font-name: "gotham-bookgotham-book", "Helvetica", serif;
+$bold-font-name: "gotham-boldgotham-bold", "Helvetica", serif;
+$medium-font-name: "gotham-mediumgotham-medium", "Helvetica", serif;
+$headline-font-name:$regular-font-name;
+$social-font-name:"socialicoregular", "Helvetica", serif;
+$social-font-name-two:"socialico_plusregular", "Helvetica", serif;
+
+
+//transitions
+
+$base-transition-duration:.2s;
+
+//text columns
+
+$text-column-gutter-width: $baseline;

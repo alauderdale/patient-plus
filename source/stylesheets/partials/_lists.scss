@@ -1,0 +1,45 @@
+ul{
+	li{
+		font-size: 1rem;
+	}
+}
+
+.dl-horizontal{
+	@include fontSize(16px);
+	margin-bottom:0;
+	dt{
+		margin-bottom:$baseline/2;
+	}
+	dt{
+		text-align:left;	
+	}
+}
+
+.info-list{
+	ul{
+		li{
+			margin-bottom:$baseline/2;
+		}
+	}
+}
+
+ul.avatars-list{
+	li{
+		margin-right:-20px;
+		text-align:center;
+
+		a{
+			color:$text-color;
+			.more{
+				width:40px;
+				height:40px;
+				background:$background-color;
+				border-radius:100px;
+				i{
+					margin-top: 12px;
+				}
+			}
+		}
+
+	}
+}

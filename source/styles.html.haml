@@ -1,0 +1,34 @@
+;;;
+	"title": "Styles"
+;;;
+
+%section
+	.container
+		.col-lg-2
+		.col-lg-8
+			%h1.medium-font-name
+				Title 1 - 44
+			%h2.medium-font-name
+				Title 2 - 32
+			%h3.medium-font-name
+				Title 3 - 23
+			%h4
+				Large - 18
+			%h5
+				Small - 13
+			%h6.bold-font-name.light-text-color
+				Micro - 11
+			%p
+				Regular-
+				= lorem.sentences 5
+			%p
+				%a{:href=>"#"}
+					Linked
+			%p
+				%a.btn.btn-primary.btn-lg.fancybox{:href=>"http://images6.alphacoders.com/316/316963.jpg"}
+					Click Me
+				%a.btn.btn-default.btn-lg.fancybox{:href=>"http://images6.alphacoders.com/316/316963.jpg"}
+					Click Me
+				%a.btn.btn-info.btn-lg.fancybox{:href=>"http://images6.alphacoders.com/316/316963.jpg"}
+					Click Me
+		.col-lg-2

@@ -1,0 +1,39 @@
+a{
+	color:$link-color;
+	&:hover,&:active,&:focus{
+		text-decoration: none;
+		outline:none;
+	}
+
+}
+
+.btn{
+	font-size:1rem;
+	border-radius:4px;
+	font-family:$medium-font-name;
+	@include transition-duration($base-transition-duration);
+	padding:10px 16px;
+	&:active{
+		box-shadow:none;
+	}
+	&.btn-primary{
+		background-color:$link-color;
+		border:none;
+		&:hover{
+			background-color:shade($link-color,10%);
+		}
+	}
+	&.btn-default{
+		&:hover{
+			background-color:tint($light-gray-color,50%);
+		}
+	}
+	&.btn-info{
+		background-color:$secondary-color;
+		border:none;
+		&:hover{
+			background-color:shade($secondary-color,10%);
+		}
+	}
+}
+

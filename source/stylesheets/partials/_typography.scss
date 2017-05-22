@@ -1,0 +1,222 @@
+// typography baselines and @font face setups
+
+
+//fonts
+
+@font-face {
+    font-family: 'gotham-bookgotham-book';
+    src: url('../font/gothmbok-webfont.woff2') format('woff2'),
+         url('../font/gothmbok-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gotham-boldgotham-bold';
+    src: url('../font/gothmbol-webfont.woff2') format('woff2'),
+         url('../font/gothmbol-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gotham-mediumgotham-medium';
+    src: url('../font/gothmmed-webfont.woff2') format('woff2'),
+         url('../font/gothmmed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'socialicoregular';
+    src: url('../font/socialico-webfont.eot');
+    src: url('../font/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/socialico-webfont.woff') format('woff'),
+         url('../font/socialico-webfont.ttf') format('truetype'),
+         url('../font/socialico-webfont.svg#socialicoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'socialico_plusregular';
+    src: url('../font/socialico_plus-webfont.woff2') format('woff2'),
+         url('../font/socialico_plus-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+.text-columns-2{
+  @include columns($text-column-gutter-width 2);
+}
+.text-columns-3{
+  @include columns($text-column-gutter-width 3);
+}
+.text-columns-4{
+  @include columns($text-column-gutter-width 4);
+}
+
+.text-uppercase{
+  text-transform:uppercase;
+}
+
+.text-color{
+  color:$text-color;
+}
+
+.body-text-color{
+  color:$body-text-color;
+}
+
+.dark-text-color{
+  color:$dark-text-color;
+}
+
+.light-text-color{
+  color:$light-text-color;
+}
+
+.text-success{
+  color:$green-color;
+}
+
+.text-warning{
+  color:$warning-color;
+}
+
+.link-color{
+  color:$link-color!important;
+}
+
+
+//font families
+
+.headline-font-name{
+    font-family:$headline-font-name;
+}
+
+.regular-font-name{
+    font-family:$regular-font-name;
+}
+
+.medium-font-name{
+    font-family:$medium-font-name!important;
+}
+
+.bold-font-name{
+    font-family:$bold-font-name!important;
+}
+
+.social-font-name{
+    font-family:$social-font-name;
+}
+
+
+
+
+//font color
+
+.primary-text-color{
+  color:$primary-color!important;
+  p{
+    color:$primary-color!important;
+  }
+}
+
+.secondary-text-color{
+  color:$secondary-color!important;
+  p{
+    color:$secondary-color!important;
+  }
+}
+
+//font size
+
+
+
+
+
+
+//font base
+
+
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+h1, h2, h3, h4, h5, h6, p {
+
+  margin-bottom:$baseline/1.4;
+
+}
+
+
+
+
+
+h1 {
+  @include fontSize(44px);
+}
+h2 {
+  @include fontSize(32px);
+}
+h3 {
+  @include fontSize(23px);
+}
+h4 {
+  @include fontSize(18px);
+  line-height: 1.8rem;
+}
+h5 {
+  @include fontSize(13px);
+}
+h6 {
+  @include fontSize(11px);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+p{
+  @include fontSize(16px);
+  line-height: 28px;
+  color:$body-text-color;
+  margin-bottom:$baseline/2;
+}
+
+
+//font awesome
+
+
+
+.check-icon{
+  border-color:$border-color;
+  border-radius: 100px;
+  padding:8px;
+  font-size: 1rem;
+}
+
+
+//mobile
+
+  @include breakpoint(sm) {
+
+    // html{
+    //   font-size: 80%;
+    // }
+
+  }

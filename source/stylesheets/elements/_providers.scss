@@ -1,0 +1,85 @@
+
+
+
+
+//provider show
+
+.book-panel{
+	padding:16px 16px;
+	border:1px solid $border-color;
+	width:100%;
+	border-top:none;
+	&:first-of-type{
+		border-top:1px solid $border-color;
+	}
+	a.btn-hours{
+		color: $light-text-color;
+	}
+	.btn-location{
+		color: $text-color;
+		&:hover{
+			color:$link-color;
+		}
+	}
+	a.btn-directions{
+		position:relative;
+		top:18px;
+		i{
+			@include fontSize(18px);
+		}
+		h6{
+			margin-top:0;
+			@include fontSize(10px);
+			font-family: $bold-font-name;
+			text-transform:none;
+			letter-spacing: 0;
+		}
+	}
+	&.active{
+		background:#fafafa;
+		box-shadow:inset 1px 0 $link-color;
+	}
+	ul.share-links{
+		list-style: none; 
+		li{
+			display: inline;
+			font-size: 1.1rem;
+			a{
+				color:$text-color;
+				padding:0 10px;
+			}
+		}
+	}
+}
+
+//overview
+
+.locations-map{
+	width:100%;
+	height:300px;
+	background-color:#f2f2f2;
+	margin-bottom:$baseline;
+}
+
+
+//services
+
+.spacer-default{
+	margin:$baseline*2 0;
+}
+
+
+.service-icon{
+	width:45px;
+	height:45px;
+	text-align:center;
+	img{
+		width:30px;
+		margin:0 auto;
+		position:relative;
+		top:8px;
+	}
+	border-radius:100px;
+	border:1px solid $gray-color;
+	display:block;
+}

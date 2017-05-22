@@ -1,0 +1,17 @@
+
+//sections
+section{
+  padding:$baseline*2 0;
+  &.invert-section{
+  	background:$primary-color;
+  	@extend %white_text;
+  }
+  &.bg-cover{
+    background:cenrer no-repeat 100%;
+    background-size:cover;
+    background-position:center center;
+  }
+  &.bg-off-white{
+    background-color:$background-color;
+  }
+}

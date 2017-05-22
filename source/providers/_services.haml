@@ -1,0 +1,71 @@
+%section#services.bg-off-white
+	.container
+		.col-lg-12	
+			%h2.text-center.bold-font-name
+				Services
+			.spacer-default
+				.row.row-centered
+					-6.times do
+						.col-sm-4.col-xs-6.col-centered	
+							%a{:href=>"#"}
+								.card-service
+									%img.img-responsive{:src=>"/images/tmp/service-bg@2x.png"}
+									.card-footer.text-center
+										%h4.bold-font-name
+											Whitening
+										%h5.bold-font-name
+											More info
+											%i.fa.fa-chevron-circle-right
+		.col-lg-12
+			%h4.text-center.medium-font-name
+				Additional services
+			.spacer-default
+				.row
+					-5.times do
+						.col-sm-6.col-md-4.col-xs-12	
+							.row.margin-bottom
+								.col-xs-2
+									.service-icon
+										%img{:src=>"/images/icon-tooth.png"}
+								.col-xs-10
+									%h6.light-text-color.half-margin-bottom
+										Comfort & TECHNOLOGY
+									%ul.list-unstyled.medium-font-name
+										- 10.times do
+											%li
+												%a{:href=>"#"}
+													=lorem.words(2)
+		.col-lg-12	
+			%h2.text-center.bold-font-name
+				Endorsements
+			.spacer-default
+				.row
+					.col-lg-1
+					.col-lg-10
+						-4.times do
+							.panel.panel-chip
+								.chip-info
+									%i.fa.fa-check.text-success.fa-border.check-icon.half-margin-right
+									%h5.no-margin.bold-font-name
+										Full Mouth Rehabilitation
+								.chip-info
+									%h5.no-margin.bold-font-name.light-text-color.full-width
+										Endorsed by
+										%a{:href=>"#"}
+											John Doe, Bill Burr and 4 more
+								.chip-info
+									%ul.list-inline.text-right.full-width.avatars-list.half-margin-right
+										-3.times do
+											%li
+												%a{:href=>"#"}
+													%img.avatar-sm.avatar-default{:src=>"/images/tmp/avatar-1.png"}
+										%li
+											%a{:href=>"#"}
+												.more
+													%i.fa.fa-ellipsis-h
+					.col-lg-1
+
+
+
+
+
