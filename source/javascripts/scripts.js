@@ -30,8 +30,11 @@ $(document).ready(function(){
         mode: 'fade',
         thumbItem:16,
         slideMargin:0,
+        controls:false,
         enableDrag:false,
         enableTouch:false,
+        adaptiveHeight:true,
+        speed:200,
         addClass: 'nurse-slider-wrapper', 
 
         responsive : [
