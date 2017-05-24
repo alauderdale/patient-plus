@@ -33,7 +33,7 @@ $(document).ready(function(){
         controls:false,
         enableDrag:false,
         enableTouch:false,
-        adaptiveHeight:false,
+        adaptiveHeight:true,
         speed:200,
         addClass: 'nurse-slider-wrapper', 
 
@@ -42,11 +42,14 @@ $(document).ready(function(){
                 breakpoint:720,
                 settings: {
                     thumbItem:6,
-                    adaptiveHeight:false,
                   }
             }
         ]
     });  
+
+    $( window ).resize(function() {
+        $('.nurse-slider').css('padding','0');
+    });
 
 
     $('#team-accordion').on('show.bs.collapse', function () {
