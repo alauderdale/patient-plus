@@ -1,6 +1,13 @@
 
-.out{
-	opacity:0;
+.collapse{
+
+	display:block;
+	height:0;
+	overflow:hidden;
+	&.in{
+	height:auto;
+	overflow:visible;
+	}
 }
 
 .panel-collapse{
@@ -15,7 +22,7 @@
 
 .nurse-slider-wrapper{
 	opacity:0;
-	@include transition-duration(.3s);
+	@include transition-duration(.2s);
 	ul.lSPager{
 		margin-top:$baseline;
 		// width:100%!important;
