@@ -22,6 +22,17 @@
 		border-radius:0px;
 		background:white;
 		color:$text-color;
+		i.collapse-chevron{
+			position:relative;
+			top:7px;
+			right:20px;
+			font-size: .7rem;
+		}
+		a.collapsed{
+			i.collapse-chevron{
+			    @include transform(rotate(180deg));
+			}
+		}
 	}
 }
 
@@ -66,3 +77,38 @@
 		display: inline-block;
 	}
 }
+
+//accordian specific styling
+.acordian-default{
+	.panel{
+		.panel-heading{
+			padding:0;
+			a{
+				padding:$baseline/1.3;
+			}
+		}
+	}
+}
+
+
+//team accordian 
+#team-accordion{
+	.collapse{
+		display:block;
+		height:0;
+		overflow:hidden;
+		&.in{
+		height:auto;
+		overflow:visible;
+		}
+	}
+
+	.panel-collapse{
+		&.in{
+			.nurse-slider-wrapper{
+				opacity: 1;
+			}
+		}
+	}
+}
+

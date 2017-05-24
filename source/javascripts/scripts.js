@@ -33,15 +33,16 @@ $(document).ready(function(){
         controls:false,
         enableDrag:false,
         enableTouch:false,
-        adaptiveHeight:true,
+        adaptiveHeight:false,
         speed:200,
         addClass: 'nurse-slider-wrapper', 
 
         responsive : [
             {
-                breakpoint:800,
+                breakpoint:720,
                 settings: {
                     thumbItem:6,
+                    adaptiveHeight:false,
                   }
             }
         ]

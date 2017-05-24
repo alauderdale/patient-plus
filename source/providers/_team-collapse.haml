@@ -1,25 +1,28 @@
-#team-accordion.panel-group{"aria-multiselectable" => "true", :role => "tablist"}
+#team-accordion.panel-group.acordian-default{"aria-multiselectable" => "true", :role => "tablist"}
   .panel.panel-default
     #headingOne.panel-heading{:role => "tab"}
       %p.panel-title.bold-font-name
         %a.display-block{"aria-controls" => "collapseOne", "aria-expanded" => "true", "data-parent" => "#team-accordion", "data-toggle" => "collapse", :href => "#collapseOne", :role => "button"}
           Dentists
+          %i.fa.fa-chevron-up.pull-right.collapse-chevron
     #collapseOne.panel-collapse.collapse.in{"aria-labelledby" => "headingOne", :role => "tabpanel"}
       .panel-body
         =partial"providers/nurse-slider.haml"
   .panel.panel-default
     #headingTwo.panel-heading{:role => "tab"}
       %p.panel-title.bold-font-name
-        %a.display-block{"aria-controls" => "collapseTwo", "data-parent" => "#team-accordion", "data-toggle" => "collapse", :href => "#collapseTwo", :role => "button"}
-          Dentists
+        %a.display-block.collapsed{"aria-controls" => "collapseTwo", "data-parent" => "#team-accordion", "data-toggle" => "collapse", :href => "#collapseTwo", :role => "button"}
+          Hygienists
+          %i.fa.fa-chevron-up.pull-right.collapse-chevron
     #collapseTwo.panel-collapse.collapse{"aria-labelledby" => "headingTwo", :role => "tabpanel"}
       .panel-body
         =partial"providers/nurse-slider.haml"
   .panel.panel-default
     #headingThree.panel-heading{:role => "tab"}
       %p.panel-title.bold-font-name
-        %a.display-block{"aria-controls" => "collapseThree", "data-parent" => "#team-accordion", "data-toggle" => "collapse", :href => "#collapseThree", :role => "button"}
-          Dentists
+        %a.display-block.collapsed{"aria-controls" => "collapseThree", "data-parent" => "#team-accordion", "data-toggle" => "collapse", :href => "#collapseThree", :role => "button"}
+          Front office
+          %i.fa.fa-chevron-up.pull-right.collapse-chevron
     #collapseThree.panel-collapse.collapse{"aria-labelledby" => "headingThree", :role => "tabpanel"}
       .panel-body
         =partial"providers/nurse-slider.haml"
