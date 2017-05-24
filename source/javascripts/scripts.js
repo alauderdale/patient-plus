@@ -25,6 +25,7 @@ $(document).ready(function(){
 
     //lightslider
 
+    //team slider settings
     $('.nurse-slider').lightSlider({
         gallery:true,
         mode: 'fade',
@@ -34,7 +35,7 @@ $(document).ready(function(){
         enableDrag:false,
         enableTouch:false,
         adaptiveHeight:true,
-        speed:200,
+        speed:400,
         addClass: 'nurse-slider-wrapper', 
 
         responsive : [
@@ -47,6 +48,35 @@ $(document).ready(function(){
         ]
     });  
 
+
+    $('.connected-dr-slider').lightSlider({
+        item:3,
+        loop:true,
+        pager:false,
+        slideMove:3,
+        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+        speed:900,
+        responsive : [
+            {
+                breakpoint:1000,
+                settings: {
+                    item:2,
+                    slideMove:1,
+                    slideMargin:6,
+                  }
+            },
+            {
+                breakpoint:480,
+                settings: {
+                    item:1,
+                    slideMove:1
+                  }
+            }
+        ]
+    });  
+
+
+    //fixes team slider resizing issue from small to large screen widths
     $( window ).resize(function() {
         $('.nurse-slider').css('padding','0');
     });

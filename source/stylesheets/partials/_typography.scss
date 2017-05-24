@@ -91,7 +91,7 @@
 }
 
 .extra-light-text-color{
-  color:tint($light-text-color,20%);
+  color:$extra-light-text-color;
 }
 
 .text-success{

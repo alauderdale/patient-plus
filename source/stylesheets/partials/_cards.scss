@@ -1,0 +1,22 @@
+.dr-card{
+	.info-wrapper{
+		margin-top:-50px;
+	}
+	.header-img{
+		img{
+			background-color: $gray-color;
+		}
+		
+	}
+	h6{
+		display: inline;
+		vertical-align: middle;
+		margin:0;
+	}
+	.card-footer{
+		padding:10px;
+	}
+	a{
+		color:$text-color;
+	}
+}

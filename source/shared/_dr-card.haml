@@ -1,0 +1,28 @@
+.panel.dr-card
+	.header-img
+		%img.img-responsive.full-width{:src=>"/images/tmp/practice-bg-sm.png"}
+	.panel-body
+		.info-wrapper
+			.avatar-img.text-center.half-margin-bottom
+				%img.avatar-lg.avatar-default{:src=>"/images/tmp/avatar-2.png"}
+			.text-center
+				%p.bold-font-name.no-margin-bottom
+					%a{:href=>"#"}
+						=lorem.name
+				%h5.quarter-margin-top
+					Orthadontist
+			.card-footer.half-padding-top
+				.pull-left
+					%h6.extra-light-text-color.bold-font-name
+						Network
+				.pull-right
+					%ul.list-inline.text-right.avatars-list.avatars-list-xs
+						-3.times do
+							%li
+								%a{:href=>"#"}
+									%img.avatar-xs.avatar-default{:src=>"/images/tmp/avatar-1.png"}
+						%li
+							%a{:href=>"#"}
+								.more
+									%i.fa.fa-ellipsis-h
+				.clearfix
