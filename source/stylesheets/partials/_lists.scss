@@ -4,20 +4,25 @@ ul{
 	}
 }
 
+dt, dd{
+	line-height:1.5rem;
+}
+
 .dl-horizontal{
 	@include fontSize(16px);
 	margin-bottom:0;
 	dt{
 		margin-bottom:$baseline/2;
 		text-align:left;	
-		color:$light-text-color;
+		font-family: $medium-font-name;
+		color: $light-text-color;
 	}
 }
 
 .info-list{
 	ul{
 		li{
-			margin-bottom:$baseline/2;
+			margin-bottom:8px;
 		}
 	}
 }

@@ -90,6 +90,10 @@
   color:$light-text-color;
 }
 
+.extra-light-text-color{
+  color:tint($light-text-color,20%);
+}
+
 .text-success{
   color:$green-color;
 }
@@ -179,7 +183,7 @@ h3 {
 }
 h4 {
   @include fontSize(18px);
-  line-height: 1.8rem;
+  line-height: 1.6rem;
 }
 h5 {
   @include fontSize(13px);
@@ -196,6 +200,29 @@ p{
   line-height: 28px;
   color:$body-text-color;
   margin-bottom:$baseline/2;
+}
+
+//bordered headline
+
+.headline-bordered{
+      padding-bottom: 18px;
+    margin-bottom: 28.8px;
+    position: relative;
+  &:before{
+        content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 32px;
+    height: 3px;
+    background: $primary-color;
+  }
+  &.centered{
+    &:before{
+      margin:auto;
+    }
+  }
 }
 
 

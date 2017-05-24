@@ -14,7 +14,7 @@ html {
 
 body{
   font: 100%;
-  color: black;
+  color: $text-color;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
   width:100%;
@@ -24,7 +24,7 @@ body{
   -webkit-font-smoothing: antialiased;
   zoom:1;
   font-style: normal!important;
-  font-family: 'gotham-bookgotham-book', "Helvetica", serif;
+  font-family: $regular-font-name;
   background-color:white;
 }
 

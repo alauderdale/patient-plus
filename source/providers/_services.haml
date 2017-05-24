@@ -1,19 +1,31 @@
 %section#services.bg-off-white
 	.container
 		.col-lg-12	
-			%h2.text-center.bold-font-name
+			%h2.text-center.bold-font-name.headline-bordered.centered
 				Services
 			.spacer-default
 				.row.row-centered
-					-6.times do
+					-3.times do
 						.col-sm-4.col-xs-6.col-centered	
 							%a{:href=>"#"}
 								.card-service
 									%img.img-responsive{:src=>"/images/tmp/service-bg@2x.png"}
 									.card-footer.text-center
 										%h4.bold-font-name
-											Long Service Name
-										%span.hidden-xs
+											Scaling & Root Planning 
+										%span.hidden-sm.hidden-xs
+											%h5.bold-font-name
+												More info
+												%i.fa.fa-chevron-circle-right
+					-3.times do
+						.col-sm-4.col-xs-6.col-centered	
+							%a{:href=>"#"}
+								.card-service
+									%img.img-responsive{:src=>"/images/tmp/service-bg@2x.png"}
+									.card-footer.text-center
+										%h4.bold-font-name
+											Filling 
+										%span.hidden-sm.hidden-xs
 											%h5.bold-font-name
 												More info
 												%i.fa.fa-chevron-circle-right
@@ -37,7 +49,7 @@
 												%a{:href=>"#"}
 													=lorem.words(2)
 		.col-lg-12	
-			%h2.text-center.bold-font-name
+			%h2.text-center.bold-font-name.headline-bordered.centered
 				Endorsements
 			.spacer-default
 				.row

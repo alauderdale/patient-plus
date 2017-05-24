@@ -17,9 +17,7 @@
 	}
 	.btn-location{
 		color: $text-color;
-		&:hover{
-			color:$link-color;
-		}
+		cursor:pointer;
 	}
 	a.btn-directions{
 		position:relative;
@@ -89,4 +87,57 @@
 	border-radius:100px;
 	border:1px solid $gray-color;
 	display:block;
+}
+
+
+.card-service{
+	position:relative;
+	box-shadow: 0 12px 24px 0 rgba(113,202,255,0.06), 0 12px 24px 0 rgba(0,0,0,0.11);
+	width:100%;
+	background:red;
+	margin:$baseline/2 0;
+	top:0px;
+	@include transition(top 0.2s);
+	&:hover{
+		box-shadow: 0 12px 24px 0 rgba(113,202,255,0.06), 0 17px 29px 0 rgba(0,0,0,0.11);
+    	top: -4px;
+    	.card-footer{
+    		// box-shadow: inset 3px 3px 0 rgba(0,0,0,.2), inset -3px -3px 0 rgba(0,0,0,.2);
+    	}
+	}
+	img{
+		width:100%;
+	}
+	h4{
+		margin:0;
+	}
+	h5{
+		margin:0;
+	}
+	.card-footer{
+		width:100%;
+		position:absolute;
+		bottom:0;
+		background:rgba(9, 134, 181, 0.92);
+		color:white;
+		padding:10px 5px;
+		min-height: 50px;
+		@include transition-duration(.2s);
+		a{
+			color:white;
+		}
+		h4{
+			margin-bottom:8px;
+		}
+	  @include breakpoint(md) {
+	    position:relative;
+		h4{
+			@include fontSize(13px);
+			line-height: 1.1rem;
+			vertical-align: middle;
+			display: inline-flex;
+			margin-bottom:0px;
+		}
+	  }
+	}
 }

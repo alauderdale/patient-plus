@@ -1,6 +1,28 @@
+.panel-default > .panel-heading + .panel-collapse > .panel-body{
+	border-top-color:white;
+}
+
+.panel-group .panel + .panel{
+	margin-top:-1px;
+}
+
+.panel-group{
+	.panel{
+		border-radius:0px;
+	}
+}
 .panel{
 	box-shadow:none;
 	border:1px solid $border-color;
+	border-radius:0px;
+	&.panel-default{
+		background:white;
+	}
+	.panel-heading{
+		border-radius:0px;
+		background:white;
+		color:$text-color;
+	}
 }
 
 .panel-chip{
