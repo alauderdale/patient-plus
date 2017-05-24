@@ -51,8 +51,9 @@ $(document).ready(function(){
 
     $('.connected-dr-slider').lightSlider({
         item:3,
-        loop:true,
-        pager:false,
+        loop:false,
+        controls: false,
+        pager:true,
         slideMove:3,
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
         speed:900,
