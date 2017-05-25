@@ -48,16 +48,16 @@
 		vertical-align: middle;
 		align-items:center;
 		&:nth-child(1){
-			width:35%;
+			width:30%;
 			@include breakpoint(md) {
 				width:48%!important;
 			}
 		}
 		&:nth-child(2){
-			width:40%;
+			width:45%;
 			@include breakpoint(md) {
 				width:49%!important;
-				text-align:right;
+				// text-align:right;
 				margin-right:1%;
 			}
 			

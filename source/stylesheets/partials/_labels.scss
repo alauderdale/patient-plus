@@ -1,0 +1,8 @@
+.label{
+	@include fontSize(12px);
+	&.label-default{
+		color: $light-text-color;
+		background:white;
+		border:1px solid $extra-light-text-color;
+	}
+}

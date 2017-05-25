@@ -1,0 +1,28 @@
+
+.row
+	.review.clearfix
+		.col-sm-2
+			.reviewer-meta.half-margin-bottom
+				%span.review-date
+					%p.medium-font-name.review-date-text
+						Jan 1 2017
+				%span.review-name
+					%img.avatar-xs.review-name-img.avatar-default{:src=>"/images/tmp/avatar-1.png"}
+					%h5.review-name-text
+						=lorem.first_name
+						\M.
+				.label.label-default.featured-label
+					featured
+		.col-sm-10
+			.row.half-margin-bottom
+				-5.times do
+					.col-md-4.col-xs-6
+						%dl.dl-horizontal.review-metric
+							%dt
+								Beside manner
+							%dd
+								=partial"providers/stars"
+			.row
+				.col-lg-12
+					%p
+						=lorem.paragraphs(1)

@@ -1,0 +1,37 @@
+%section#services
+	.container
+		.row
+			.col-lg-12	
+				%h2.text-center.bold-font-name.headline-bordered.centered
+					Patient Reviews
+				.spacer-default
+					.row
+						.col-lg-12
+							.row
+								.reviews-header.page-header
+									.col-sm-6
+										%p.bold-font-name.no-margin-bottom.pull-left.quarter-margin-right
+											200 Reviews
+										.pull-left
+											%span{:style=>"position:relative; top:3px;"}
+												=partial"providers/stars"
+										.clearfix
+									.col-sm-6
+										.pull-right.pull-left-sm
+											%h5.light-text-color
+												All our reviews are authentic
+									.clearfix
+					-5.times do
+						.row
+							.col-lg-12
+								=partial"providers/review"
+					.row
+						.col-lg-12.text-center	
+							.margin-top
+								%a.btn.btn-default{:href=>"#"}
+									Load more
+
+
+
+
+

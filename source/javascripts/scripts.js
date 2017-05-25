@@ -16,6 +16,18 @@ $(document).ready(function(){
 
 
 
+     var bottom = $('#overview').offset().top;
+    $(window).scroll(function(){    
+        if ($(this).scrollTop() > bottom){ 
+            $('.provider-nav').addClass('navbar-fixed-top'); 
+        }
+        else{
+            $('.provider-nav').removeClass('navbar-fixed-top');
+        }
+    });
+
+
+
     //tooltips
 
 	$('.tooltip-up').tooltip({html:true});

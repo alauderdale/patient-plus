@@ -187,6 +187,7 @@ h4 {
 }
 h5 {
   @include fontSize(13px);
+  line-height: 1.1rem;
 }
 h6 {
   @include fontSize(11px);
@@ -242,8 +243,8 @@ p{
 
   @include breakpoint(sm) {
 
-    // html{
-    //   font-size: 80%;
-    // }
+    html{
+      font-size: .9rem;
+    }
 
   }

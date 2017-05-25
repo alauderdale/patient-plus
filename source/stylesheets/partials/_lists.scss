@@ -12,10 +12,28 @@ dt, dd{
 	@include fontSize(16px);
 	margin-bottom:0;
 	dt{
+		font-weight: normal;
 		margin-bottom:$baseline/2;
 		text-align:left;	
 		font-family: $medium-font-name;
 		color: $light-text-color;
+	}
+}
+
+.review-metric{
+	margin-bottom:5px;
+	  // @include breakpoint(sm) {
+	  //   margin-bottom:$baseline/2;
+	  // }
+	dd{
+		margin-left:0;
+	}
+	dt{
+		font-family: $regular-font-name;
+		color:$light-text-color;
+		font-weight: normal;
+		width:130px;
+		margin-bottom:0;
 	}
 }
 
