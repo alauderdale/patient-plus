@@ -1,3 +1,33 @@
+$(window).load(function(){
+
+    // var bottom_offset = ($('#panel-stop').outerHeight(true));
+
+    // $('#book-panel').affix({
+    //     offset: {
+    //         top: $('#book-panel').offset().top,
+    //         bottom: bottom_offset
+    //     }
+    // });
+
+
+    $('.provider-nav').affix({
+        offset: {
+            top: $('.provider-nav').offset().top,
+        }
+    });
+
+
+    console.log( bottom_offset);
+
+
+
+
+
+
+});
+
+
+
 $(document).ready(function(){
 
 
@@ -16,17 +46,15 @@ $(document).ready(function(){
 
 
 
-     var bottom = $('#overview').offset().top;
-    $(window).scroll(function(){    
-        if ($(this).scrollTop() > bottom){ 
-            $('.provider-nav').addClass('navbar-fixed-top'); 
-        }
-        else{
-            $('.provider-nav').removeClass('navbar-fixed-top');
-        }
-    });
-
-
+    //  var bottom = $('#overview').offset().top;
+    // $(window).scroll(function(){    
+    //     if ($(this).scrollTop() > bottom){ 
+    //         $('.provider-nav').addClass('navbar-fixed-top'); 
+    //     }
+    //     else{
+    //         $('.provider-nav').removeClass('navbar-fixed-top');
+    //     }
+    // });
 
     //tooltips
 

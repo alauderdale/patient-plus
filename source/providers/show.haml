@@ -11,12 +11,14 @@
 				%a.btn.btn-default.btn-lg.fancybox{:href=>"http://images6.alphacoders.com/316/316963.jpg"}
 					View gallery
 		.col-sm-2
+	=partial"providers/provider-nav.haml"
 
 =partial"providers/overview.haml"
-=partial"providers/services.haml"
-=partial"providers/team.haml"
-=partial"providers/connected-drs.haml"
-=partial"providers/reviews.haml"
+#panel-stop
+	=partial"providers/services.haml"
+	=partial"providers/team.haml"
+	=partial"providers/connected-drs.haml"
+	=partial"providers/reviews.haml"
 
 
 

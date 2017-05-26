@@ -1,4 +1,56 @@
+#overview{
+	position:relative;
+}
 
+#profile-hero{
+	position:relative;
+	padding-bottom:$baseline*5;
+}
+
+.book-panel-outter{
+	// margin-bottom:-85px;
+}
+
+#book-panel{
+	// padding-top:85px;
+	// &.affix {
+	//   top: 0px;
+	//   width:350px;
+	//   height:800px;
+	// 	@include breakpoint(lg) {
+	// 		width:283px;
+	// 		min-height:1000px;
+	// 	}
+	// }
+
+	// &.affix-bottom {
+	//   position: relative;
+	//   bottom:0;
+	//   width:350px;
+	//   height:800px;
+	// 	@include breakpoint(lg) {
+	// 		width:283px;
+	// 		min-height:1000px;
+	// 	}
+	// }
+	// @include breakpoint(md) {
+	// 	&.affix-bottom, &.affix {
+	// 		position:relative!important;
+	// 		width:100%!important;
+	// 		height:auto!important;
+	// 		min-height: auto!important;
+	// 	}
+	// }
+	// @include breakpoint(sm) {
+	// 	&.affix-bottom, &.affix {
+	// 		position:relative!important;
+	// 		width:100%!important;
+	// 		height:auto!important;
+	// 		min-height: auto!important;
+	// 	}
+	// }
+
+}
 
 
 
@@ -9,6 +61,7 @@
 	border:1px solid $border-color;
 	width:100%;
 	border-top:none;
+	background:white;
 	&:first-of-type{
 		border-top:1px solid $border-color;
 	}
