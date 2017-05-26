@@ -20,10 +20,10 @@ $provider-nav-padding: 24px;
 	}
 	.btn{
 		padding:12px 24px;
-		@include fontSize(18px);
+		// @include fontSize(18px);
 	}
 	.nav-element-block{
-		width:100%;
+		width:150px;
 		a{
 			margin:13px;
 			display: inline-block;
