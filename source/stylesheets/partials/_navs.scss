@@ -89,6 +89,10 @@ $provider-nav-padding: 24px;
 				.btn{
 					width:100%;
 					margin:0;
+					opacity: 1!important;
+					display: block!important;
+					@include animation-duration(0s);
+					@include animation-delay(0s);
 				}
 			}
 		}
