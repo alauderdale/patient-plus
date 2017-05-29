@@ -1,24 +1,26 @@
 $(window).load(function(){
 
-    // var bottom_offset = ($('#panel-stop').outerHeight(true));
 
-    // $('#book-panel').affix({
-    //     offset: {
-    //         top: $('#book-panel').offset().top,
-    //         bottom: bottom_offset
+
+
+    //adds nav chrome when scrolled below book bugton
+    // var bottom = $('.begin-show-actions').offset().top;
+    // $(window).scroll(function(){    
+    //     if ($(this).scrollTop() > bottom){ 
+    //         $('.provider-nav').addClass('show-actions'); 
+    //     }
+    //     else{
+    //         $('.provider-nav').removeClass('show-actions');
     //     }
     // });
 
 
+    //affixes the provider nav when scrolling past it
     $('.provider-nav').affix({
         offset: {
             top: $('.provider-nav').offset().top,
         }
     });
-
-
-    console.log( bottom_offset);
-
 
 
 
@@ -29,6 +31,20 @@ $(window).load(function(){
 
 
 $(document).ready(function(){
+
+
+
+    //smoothscroll
+
+
+    $('.scrollsomething').smoothScroll({
+
+        speed: 800,
+        offset: -76,
+        easing: "easeInOutCubic"
+
+    });
+
 
 
 
@@ -43,18 +59,6 @@ $(document).ready(function(){
  //            media: {}
  //        }
  //   });
-
-
-
-    //  var bottom = $('#overview').offset().top;
-    // $(window).scroll(function(){    
-    //     if ($(this).scrollTop() > bottom){ 
-    //         $('.provider-nav').addClass('navbar-fixed-top'); 
-    //     }
-    //     else{
-    //         $('.provider-nav').removeClass('navbar-fixed-top');
-    //     }
-    // });
 
     //tooltips
 

@@ -2,7 +2,7 @@
 %html
 	%head
 		= partial "shared/scripts"
-		%body{:class => page_classes}
+		%body{:class => page_classes, "data-spy"=>"scroll", "data-target"=>"#provider-nav", "data-offset"=>"77"}
 			= partial "shared/modals"
 			= partial "layouts/header"
 			.main

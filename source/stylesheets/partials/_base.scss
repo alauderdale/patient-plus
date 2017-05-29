@@ -13,6 +13,7 @@ html {
 }
 
 body{
+  position: relative;
   font: 100%;
   color: $text-color;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
