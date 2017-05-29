@@ -5,7 +5,7 @@
 #profile-hero{
 	position:relative;
 	padding-bottom:$baseline*5;
-	@include breakpoint(md) {
+	@include breakpoint(sm) {
 		padding-bottom:$baseline*4;
 	}
 }

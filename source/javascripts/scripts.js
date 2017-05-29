@@ -42,18 +42,18 @@ $(document).ready(function(){
     $('.scrollsomething').smoothScroll({
 
         speed: 800,
-        offset: -76,
+        offset: -26,
         easing: "easeInOutCubic"
 
     });
 
-    $('.scrollsomething-mobile').smoothScroll({
+    // $('.scrollsomething-mobile').smoothScroll({
 
-        speed: 800,
-        offset: 50,
-        easing: "easeInOutCubic"
+    //     speed: 800,
+    //     offset: 120,
+    //     easing: "easeInOutCubic"
 
-    });
+    // });
 
 
     //tooltips

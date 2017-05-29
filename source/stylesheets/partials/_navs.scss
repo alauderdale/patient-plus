@@ -47,6 +47,9 @@ $provider-nav-padding: 24px;
 	width:100%;
 	z-index: 999;
 	height:74px;
+	@include breakpoint(sm) {
+		height:50px;
+	}
 	img{
 	}
 	.btn{
@@ -55,6 +58,9 @@ $provider-nav-padding: 24px;
 	}
 	.nav-element-block{
 		width:225px;
+		@include breakpoint(md) {
+			width:174px;
+		}
 		a{
 			margin:18px;
 			display: inline-block;
@@ -64,20 +70,26 @@ $provider-nav-padding: 24px;
 				background: #f2f2f2;
 				border-radius: 100px;
 			}
-			// &.nav-action, &.nav-logo{
-			// 	opacity: 0;
-			// }
 		}
 		&.nav-action-block{
-			position:fixed;
-			bottom:0px;
-			left:0px;
-			right:0px;
-			width:100%;
-			padding:10px;
-			.btn{
+			@include breakpoint(md) {
+				.btn{
+					padding-left: 8px;
+					padding-right: 8px;
+					@include fontSize(14px);
+				}
+			}
+			@include breakpoint(sm) {
+				position:fixed;
+				bottom:0px;
+				left:0px;
+				right:0px;
 				width:100%;
-				margin:0;
+				padding:10px;
+				.btn{
+					width:100%;
+					margin:0;
+				}
 			}
 		}
 	}
@@ -100,41 +112,71 @@ $provider-nav-padding: 24px;
 			@include animation-duration(.1s);
 		}
 	}
-	.nav{
+	.provider-nav-options-wrapper{
 		display: inline-block;
-		li{
-			list-style: none;
-			display: inline-block;
-			@include fontSize(16px);
-			@include breakpoint(md) {
-				@include fontSize(14px);
-			}
-			&.active{
-				a{
-					border-bottom:2px solid $link-color;
-					color:$link-color;
-					&:hover{
-						color:$link-color;
-					}
-				}
-			}
-			a{
-				@include transition-duration(.2s);
-				color:$light-text-color;
-				padding:$provider-nav-padding 8px;
-				@include breakpoint(md) {
-					padding:$provider-nav-padding 2px;
-				}
-				&:hover{
-					background:none;
-					color:$light-text-color;
-				}
-				&:active,&:focus{
-					background:none;
+		@include breakpoint(sm) {
+			///make the nav scrolly
+			.provider-nav-options-wrapper{
+				height: 100% !important;
+				width: 100% !important;
+				overflow-y: hidden !important;
+
+				ul.provider-nav-options{
+					height: 100% !important;
+					overflow-x: scroll !important;
+					overflow-y: auto !important;
+					white-space: nowrap !important
 				}
 			}
 		}
+		.nav{
+			display: inline-block;
+			li{
+				list-style: none;
+				display: inline-block;
+				@include fontSize(16px);
+
+				@include breakpoint(md) {
+					@include fontSize(14px);
+				}
+
+				&.active{
+					a{
+						border-bottom:2px solid $link-color;
+						color:$link-color;
+						&:hover{
+							color:$link-color;
+						}
+					}
+				}
+				a{
+					@include transition-duration(.2s);
+					color:$light-text-color;
+					padding:$provider-nav-padding 8px;
+					@include breakpoint(md) {
+						padding:$provider-nav-padding 2px;
+					}
+					@include breakpoint(sm) {
+						padding:$provider-nav-padding/2 0px;
+					}
+					&:hover{
+						background:none;
+						color:$light-text-color;
+					}
+					&:active,&:focus{
+						background:none;
+					}
+				}
+			}
+		}
+
+
+
+
+
+
 	}
+
 
 
   @include breakpoint(sm) {
