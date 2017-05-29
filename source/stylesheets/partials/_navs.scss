@@ -38,7 +38,6 @@ $provider-nav-padding: 24px;
 	.nav-element-block{
 		width:225px;
 		a{
-			@include transition-duration(.2s);
 			margin:18px;
 			display: inline-block;
 			&.nav-logo{
@@ -47,23 +46,29 @@ $provider-nav-padding: 24px;
 				background: #f2f2f2;
 				border-radius: 100px;
 			}
-			&.nav-action, &.nav-logo{
-				opacity: 0;
-			}
+			// &.nav-action, &.nav-logo{
+			// 	opacity: 0;
+			// }
 		}
 	}
 	&.affix {
 		position:fixed;
 		top: 0px;
 		bottom:auto;
-		.nav-element-block{
-			a{
-				&.nav-action, &.nav-logo{
-					opacity: 1;
-				}
-			}
+		.provider-nav-animated-item{
+		opacity: 1;
 		}
 
+	}
+	.provider-nav-animated-item{
+		opacity: 0;
+		&.nav-action{
+			@include animation-duration(.2s);
+			@include animation-delay(.1s);
+		}
+		&.nav-logo{
+			@include animation-duration(.1s);
+		}
 	}
 	.nav{
 		display: inline-block;

@@ -34,7 +34,7 @@ a{
 		background-color:$secondary-color;
 		border:none;
 		&:hover{
-			background-color:shade($secondary-color,10%);
+			background-color:tint($secondary-color,20%);
 		}
 	}
 }

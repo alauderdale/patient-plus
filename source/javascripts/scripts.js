@@ -1,29 +1,20 @@
 $(window).load(function(){
 
 
-
-
-    //adds nav chrome when scrolled below book bugton
-    // var bottom = $('.begin-show-actions').offset().top;
-    // $(window).scroll(function(){    
-    //     if ($(this).scrollTop() > bottom){ 
-    //         $('.provider-nav').addClass('show-actions'); 
-    //     }
-    //     else{
-    //         $('.provider-nav').removeClass('show-actions');
-    //     }
-    // });
-
-
     //affixes the provider nav when scrolling past it
     $('.provider-nav').affix({
         offset: {
             top: $('.provider-nav').offset().top,
         }
+    }).on('affix.bs.affix', function () {
+        $('.nav-action').addClass("fadeIn");
+    }).on('affix-top.bs.affix', function () {
+        $('.nav-action').removeClass("fadeIn");
+    }).on('affix.bs.affix', function () {
+        $('.nav-logo').addClass("zoomIn");
+    }).on('affix-top.bs.affix', function () {
+        $('.nav-logo').removeClass("zoomIn");
     });
-
-
-
 
 
 });
@@ -32,11 +23,22 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
+    //DELETE THIS adds class to repeated Middleman booking panel
+    $('.book-panel:nth-child(3)').addClass('selected'); 
+
+
+    //adds class to selected location
+    $('.location-select input').change(function() { 
+        $('.book-panel').removeClass('selected'); 
+        console.log('change');
+        if ($(this).is(':checked')) { 
+            $(this).parent().parent().parent().parent().parent().addClass('selected'); 
+        }
+    });
+
 
 
     //smoothscroll
-
-
     $('.scrollsomething').smoothScroll({
 
         speed: 800,
@@ -53,20 +55,6 @@ $(document).ready(function(){
 
     });
 
-
-
-
-	 //fancybox
-	// $('.fancybox').fancybox({
- //        padding: 0
- //    });
-	
-	// $('.fb-video').fancybox({
- //        padding: 0,
- //        helpers: {
- //            media: {}
- //        }
- //   });
 
     //tooltips
 

@@ -1,6 +1,6 @@
 .inline-block.full-width
 	.pull-left
-		%label.no-marign-bottom.quarter-margin-top
+		%label.no-marign-bottom.quarter-margin-top.location-select
 			.pull-left.half-margin-right
 				%input{:type=>"radio", :name=>"locationRadio", :id=>"locationsRadio1", :checked=>"checked"}
 			.pull-left.btn-location{"data-toggle"=>"tooltip", "data-placement"=>"top", "title"=>"Select location"}
@@ -17,14 +17,55 @@
 					%i.fa.fa-caret-down
 				%ul.dropdown-menu.no-padding-top.no-padding-bottom{:style=>"width:250px;"}
 					.half-padded
-						- 7.times do
-							.row
-								.col-xs-4
-									%h5.quarter-margin-bottom.no-margin-top
-										Wednesday
-								.col-xs-8
-									%h5.quarter-margin-bottom.no-margin-top.text-right
-										9AM - 5PM
+						.row
+							.col-xs-4
+								%h5.quarter-margin-bottom.no-margin-top
+									Sunday
+							.col-xs-8
+								%h5.quarter-margin-bottom.no-margin-top.text-right
+									Closed
+						.row
+							.col-xs-4
+								%h5.quarter-margin-bottom.no-margin-top.bold-font-name
+									Monday
+							.col-xs-8
+								%h5.quarter-margin-bottom.no-margin-top.text-right.bold-font-name
+									9AM - 5PM
+						.row
+							.col-xs-4
+								%h5.quarter-margin-bottom.no-margin-top
+									Tuesday
+							.col-xs-8
+								%h5.quarter-margin-bottom.no-margin-top.text-right
+									9AM - 5PM
+						.row
+							.col-xs-4
+								%h5.quarter-margin-bottom.no-margin-top
+									Wednesday
+							.col-xs-8
+								%h5.quarter-margin-bottom.no-margin-top.text-right
+									9AM - 5PM
+						.row
+							.col-xs-4
+								%h5.quarter-margin-bottom.no-margin-top
+									Thyrsday
+							.col-xs-8
+								%h5.quarter-margin-bottom.no-margin-top.text-right
+									9AM - 5PM
+						.row
+							.col-xs-4
+								%h5.quarter-margin-bottom.no-margin-top
+									Friday
+							.col-xs-8
+								%h5.quarter-margin-bottom.no-margin-top.text-right
+									9AM - 5PM
+						.row
+							.col-xs-4
+								%h5.quarter-margin-bottom.no-margin-top
+									Saturday
+							.col-xs-8
+								%h5.quarter-margin-bottom.no-margin-top.text-right
+									8:30AM - 4PM
 
 
 	.pull-right
