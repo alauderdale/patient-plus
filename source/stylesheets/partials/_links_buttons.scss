@@ -11,7 +11,7 @@ a{
 	font-size:1rem;
 	border-radius:4px;
 	font-family:$medium-font-name;
-	@include transition-duration($base-transition-duration);
+	@include transition-duration(0);
 	padding:12px 16px;
 	&:active{
 		box-shadow:none;
@@ -25,7 +25,9 @@ a{
 	}
 	&.btn-default{
 		&:hover{
-			background-color:tint($light-gray-color,50%);
+			border-color:$link-color;
+			background-color:white;
+			color:shade($link-color,50%);
 		}
 	}
 	&.btn-info{

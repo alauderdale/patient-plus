@@ -9,11 +9,24 @@
 					%br
 					San Jose, CA, 95118
 		%h5.margin-left.no-margin-top.no-margin-bottom
-			%a.btn-hours{:href=>"#"}
-				%span.bold-font-name
-					Open 
-				until 12:00pm
-				%i.fa.fa-caret-down
+			.dropdown
+				%a.btn-hours.dropdown-toggle{:href=>"javascript:void(0)", "data-toggle"=>"dropdown"}
+					%span.bold-font-name
+						Open 
+					until 12:00pm
+					%i.fa.fa-caret-down
+				%ul.dropdown-menu.no-padding-top.no-padding-bottom{:style=>"width:250px;"}
+					.half-padded
+						- 7.times do
+							.row
+								.col-xs-4
+									%h5.quarter-margin-bottom.no-margin-top
+										Wednesday
+								.col-xs-8
+									%h5.quarter-margin-bottom.no-margin-top.text-right
+										9AM - 5PM
+
+
 	.pull-right
 		%a.btn-directions{:href=>"#"}
 			.text-center

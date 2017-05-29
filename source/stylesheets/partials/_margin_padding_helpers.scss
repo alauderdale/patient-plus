@@ -88,6 +88,12 @@
 .padded {
   padding: $baseline !important;
 }
+.quarter-padded {
+  padding: $baseline/4 !important;
+}
+.half-padded {
+  padding: $baseline/2 !important;
+}
 .padding-top {
   padding-top: $baseline !important;
 }
