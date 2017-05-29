@@ -60,14 +60,13 @@
 				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
 					%span{"aria-hidden" => "true"} 
 						×
-				%h3.modal-title.text-center.no-margin-bottom
+				%h4.modal-title.text-center.no-margin-bottom.bold-font-name
 					Let's book your appointment
 			.modal-body
 				.padded.no-padding-top.no-padding-bottom
 					.form-group
-						%label{:for => "reasonSelect"} 
-							%h4.no-margin-bottom
-								Reason for visit
+						%p.quarter-margin-bottom.normel-font-name
+							Reason for visit
 						%select#reasonSelect.form-control.input-lg
 							%option 
 								General dentistry
@@ -79,7 +78,7 @@
 								Other
 					.form-group
 						.double-margin-top
-							%h4.margin-bottom.text-center
+							%p.margin-bottom.text-center
 								Fri. May 23, 2017
 							.date-slider
 								%a.btn.btn-default.btn-circle.pull-left{:href=>"#"}
