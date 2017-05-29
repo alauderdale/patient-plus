@@ -16,6 +16,11 @@ $provider-nav-padding: 24px;
 				a{
 
 				}
+				&.active{
+					a{
+						color:black;
+					}
+				}
 			}
 		}
 	}
