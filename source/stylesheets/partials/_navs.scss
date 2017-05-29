@@ -4,15 +4,28 @@ $provider-nav-padding: 24px;
 
 .provider-nav-mobile{
 	background: #FFFFFF;
-	border-top:1px solid $border-color;
+	border-bottom:1px solid $border-color;
 	padding:10px 0;
-
-	.menu-btn-col{
+	.menu-list-col{
 		float: left;
-		width:60px;
+		width:100%;
+		ul{
+			margin:0;
+			li{
+				@include fontSize(12px);
+				a{
+
+				}
+			}
+		}
 	}
 	.book-btn-col{
-		margin-left:60px;
+		position:fixed;
+		bottom:0px;
+		left:0px;
+		right:0px;
+		width:100%;
+		padding:10px;
 		.btn{
 			width:100%;
 		}
