@@ -6,7 +6,7 @@
 	position:relative;
 	padding-bottom:$baseline*5;
 	@include breakpoint(md) {
-		padding-bottom:$baseline*2;
+		padding-bottom:$baseline*4;
 	}
 }
 

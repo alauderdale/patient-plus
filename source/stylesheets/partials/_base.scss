@@ -27,6 +27,12 @@ body{
   font-style: normal!important;
   font-family: $regular-font-name;
   background-color:white;
+
+  @include breakpoint(sm) {
+
+    
+  }
+
 }
 
 
