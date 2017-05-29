@@ -2,6 +2,24 @@ $provider-nav-padding: 24px;
 
 
 
+.provider-nav-mobile{
+	background: #FFFFFF;
+	border-top:1px solid $border-color;
+	padding:10px 0;
+
+	.menu-btn-col{
+		float: left;
+		width:60px;
+	}
+	.book-btn-col{
+		margin-left:60px;
+		.btn{
+			width:100%;
+		}
+	}
+
+}
+
 .provider-nav{
 	background: #FFFFFF;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
@@ -60,6 +78,9 @@ $provider-nav-padding: 24px;
 				a{
 					border-bottom:2px solid $link-color;
 					color:$link-color;
+					&:hover{
+						color:$link-color;
+					}
 				}
 			}
 			a{
@@ -71,7 +92,7 @@ $provider-nav-padding: 24px;
 				}
 				&:hover{
 					background:none;
-					color:$link-color;
+					color:$light-text-color;
 				}
 				&:active,&:focus{
 					background:none;

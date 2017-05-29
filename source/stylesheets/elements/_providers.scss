@@ -5,6 +5,9 @@
 #profile-hero{
 	position:relative;
 	padding-bottom:$baseline*5;
+	@include breakpoint(md) {
+		padding-bottom:$baseline*2;
+	}
 }
 
 .book-panel-outter{

@@ -45,6 +45,14 @@ $(document).ready(function(){
 
     });
 
+    $('.scrollsomething-mobile').smoothScroll({
+
+        speed: 800,
+        offset: 50,
+        easing: "easeInOutCubic"
+
+    });
+
 
 
 

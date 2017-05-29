@@ -1,0 +1,27 @@
+.provider-nav-mobile#provider-nav-mobile.visible-sm.visible-xs.navbar-fixed-bottom
+	.container
+		.col-xs-12
+			.menu-btn-col
+				.dropup
+					%butto.btn.btn-default.btn-default.dropdown-toggle#mobile-menu-toggle{:type=>"button", "data-toggle"=>"dropdown" }
+						%i.fa.fa-bars
+					%ul.dropdown-menu{"aria-labelledby" => "mobile-menu-toggle"}
+						%li
+							%a.scrollsomething-mobile{:href => "#profile-hero"} 
+								Overview
+						%li
+							%a.scrollsomething-mobile{:href=>"#services"}
+								Services
+						%li
+							%a.scrollsomething-mobile{:href=>"#network"}
+								Network
+						%li
+							%a.scrollsomething-mobile{:href=>"#posts"}
+								Posts
+						%li
+							%a.scrollsomething-mobile{:href=>"#reviews"}
+								Reviews
+
+			.book-btn-col
+				%a.btn.btn-info.nav-action{:href=>"#"}
+					Request appointment
