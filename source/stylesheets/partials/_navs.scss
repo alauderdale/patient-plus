@@ -116,19 +116,15 @@ $provider-nav-padding: 24px;
 		display: inline-block;
 		@include breakpoint(sm) {
 			///make the nav scrolly
-			.provider-nav-options-wrapper{
 				height: 100% !important;
 				width: 100% !important;
 				overflow-y: hidden !important;
-
 				ul.provider-nav-options{
 					height: 100% !important;
-					width: 100% !important;
 					overflow-x: scroll !important;
 					overflow-y: auto !important;
 					white-space: nowrap !important
 				}
-			}
 		}
 		.nav{
 			display: inline-block;
