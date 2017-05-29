@@ -1,11 +1,11 @@
-.provider-nav#provider-nav.hidden-sm.hidden-xs
+.provider-nav#provider-nav
 	.container
 		.col-sm-12
 			.pull-left
-				.nav-element-block
+				.nav-element-block.nav-logo-block.hidden-sm.hidden-xs
 					%a.nav-logo.animated.provider-nav-animated-item{:href=>"#"}
 						%img.img-circle.avatar-default{:src=>"/images/tmp/avatar-1.png", :width=>"46"}
-			%ul.nav.list-inline.hidden-xs.hidden-sm
+			%ul.nav.list-inline
 				%li.active
 					%a.scrollsomething{:href=>"#overview"}
 						Overview
@@ -22,6 +22,6 @@
 					%a.scrollsomething{:href=>"#reviews"}
 						Reviews
 			.pull-right
-				.nav-element-block
+				.nav-element-block.nav-action-block
 					%a.btn.btn-info.nav-action.animated.provider-nav-animated-item{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#bookStepOneModal"}
 						Request appointment
