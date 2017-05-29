@@ -37,5 +37,8 @@ a{
 			background-color:tint($secondary-color,20%);
 		}
 	}
+	&.btn-circle{
+		border-radius:100px;
+	}
 }
 

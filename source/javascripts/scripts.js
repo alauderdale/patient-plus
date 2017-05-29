@@ -63,6 +63,12 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
 
 
+    //lightgallery
+
+
+
+
+
     //lightslider
 
     //team slider settings

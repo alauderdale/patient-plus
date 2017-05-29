@@ -2,38 +2,38 @@
 #infoModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
 	.modal-dialog{:role => "document"}
 		.modal-content
-			.modal-header
+			.modal-header.no-border-bottom
 				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
 					%span{"aria-hidden" => "true"} 
 						×
 				%h3.modal-title 
 					In-Network Insurances
 				%hr.no-margin-bottom
-				.modal-body
-					.margin-bottom
-						%h4.no-margin-bottom
-							AARP
-						%ul.list-unstyled
-							%li
-								Item one
-							%li
-								Item one
-							%li
-								Item one
-							%li
-								Item one
-					.margin-bottom
-						%h4.no-margin-bottom
-							Aetna
-						%ul.list-unstyled
-							%li
-								Item one
-							%li
-								Item one
-							%li
-								Item one
-							%li
-								Item one
+			.modal-body
+				.margin-bottom
+					%h4.no-margin-bottom
+						AARP
+					%ul.list-unstyled
+						%li
+							Item one
+						%li
+							Item one
+						%li
+							Item one
+						%li
+							Item one
+				.margin-bottom
+					%h4.no-margin-bottom
+						Aetna
+					%ul.list-unstyled
+						%li
+							Item one
+						%li
+							Item one
+						%li
+							Item one
+						%li
+							Item one
 
 
 
@@ -41,11 +41,63 @@
 #serviceModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
 	.modal-dialog{:role => "document"}
 		.modal-content
-			.modal-header
+			.modal-header.no-border-bottom
 				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
 					%span{"aria-hidden" => "true"} 
 						×
 				%h3.modal-title 
 					Service Title
 				%hr.no-margin-bottom
-				.modal-body
+			.modal-body
+
+
+
+
+#bookStepOneModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content.half-padding-top.half-padding-bottom.half-padding-left.half-padding-right
+			.modal-header.no-border-bottom
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} 
+						×
+				%h3.modal-title.text-center.no-margin-bottom
+					Let's book your appointment
+			.modal-body
+				.padded.no-padding-top.no-padding-bottom
+					.form-group
+						%label{:for => "reasonSelect"} 
+							%h4.no-margin-bottom
+								Reason for visit
+						%select#reasonSelect.form-control.input-lg
+							%option 
+								General dentistry
+							%option 
+								Filling
+							%option 
+								Check-up
+							%option 
+								Other
+					.form-group
+						.double-margin-top
+							%h4.margin-bottom.text-center
+								Fri. May 23, 2017
+							.date-slider
+								%a.btn.btn-default.btn-circle.pull-left{:href=>"#"}
+									%i.fa.fa-chevron-left
+								%a.btn.btn-default.btn-circle.pull-right{:href=>"#"}
+									%i.fa.fa-chevron-right
+								.clearfix
+							%hr
+						.time-block
+							.row
+								.btn-group.time-btn-group{"data-toggle"=>"buttons"}
+									-9.times do
+										%label.btn.btn-default.btn-block
+											%input{:type=>"radio", "name"=>"time-options","autocpmplete"=>"off"}
+												10:30AM
+			.modal-footer.no-border-top.text-center
+				.row
+					.col-sm-12
+						%a.btn.btn-primary.btn-block{:href=>"#"}
+							Continue
+

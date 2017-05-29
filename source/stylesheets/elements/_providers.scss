@@ -252,3 +252,27 @@
 		}
 	}
 }
+
+
+///booking step 1
+
+.date-slider{
+	margin-top:-64px;
+}
+.time-block{
+	.time-btn-group{
+		.btn{
+			width:31%;
+			margin:1%;
+			&.btn-default.active, &.btn-default:active, &.open>.dropdown-toggle.btn-default{
+				background-color:tint($primary-color,80%);
+				color:shade($primary-color,50%);
+				box-shadow:none;
+				outline:none;
+			}
+			@include breakpoint(sm) {
+				width:48%;
+			}
+		}
+	}
+}

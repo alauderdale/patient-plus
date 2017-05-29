@@ -62,3 +62,18 @@
 
 
 }
+
+//gallery slider
+
+.lg-sub-html p{
+	color:white;
+}
+
+.lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover{
+	border-color:$primary-color;
+}
+
+.lg-outer .lg-thumb-item{
+	border-radius:0;
+	border:2px solid $gray-color;
+}

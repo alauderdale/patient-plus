@@ -4,8 +4,9 @@
 		= partial "shared/scripts"
 		%body{:class => page_classes, "data-spy"=>"scroll", "data-target"=>"#provider-nav", "data-offset"=>"77"}
 			= partial "shared/modals"
-			= partial "layouts/header"
-			.main
-				= yield
-			= partial "layouts/footer"
-			= partial "layouts/provider-menu-mobile"
+			#main-content
+				= partial "layouts/header"
+				.main
+					= yield
+				= partial "layouts/footer"
+				= partial "layouts/provider-menu-mobile"

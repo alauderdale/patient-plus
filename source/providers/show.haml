@@ -9,7 +9,7 @@
 					“We cant wait to bring your smile to life with our wide range of services. We promise you comfort and quality”
 				%p.medium-font-name.margin-bottom
 					\- John Superlongname, MD
-				%a.btn.btn-default.btn-lg.fancybox{:href=>"http://images6.alphacoders.com/316/316963.jpg"}
+				%a.btn.btn-default.btn-lg#profile-gallery{:href=>"javascript:void(0)"}
 					View gallery
 		.col-sm-2
 	=partial"providers/provider-nav.haml"
@@ -21,6 +21,39 @@
 	=partial"providers/connected-drs.haml"
 	=partial"providers/posts.haml"
 	=partial"providers/reviews.haml"
+
+//init gallery
+:javascript
+	$('#profile-gallery').on('click', function() {
+		$(this).lightGallery({
+			dynamic: true,
+			download: false,
+			dynamicEl: [{
+				'src': '../slider-img/prac-1.jpg',
+				'thumb': '../slider-img/prac-1.jpg',
+				'subHtml': '<p>Title of the image</p>'
+				}, {
+				'src': '../slider-img/prac-2.jpg',
+				'thumb': '../slider-img/prac-2.jpg',
+				'subHtml': '<p>Title of the image</p>'
+				}, {
+				'src': '../slider-img/prac-3.jpg',
+				'thumb': '../slider-img/prac-3.jpg',
+				'subHtml': "<p>Title of the image</p>"
+			}]
+		})
+	});
+
+
+
+
+
+
+
+
+
+
+
 
 
 
