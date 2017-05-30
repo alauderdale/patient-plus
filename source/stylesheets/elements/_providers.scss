@@ -82,6 +82,8 @@
 			font-family: $regular-font-name;
 			color:rgba(255,255,255,.6)!important;
 			@include fontSize(12px);
+			position:relative;
+			top:2px;
 		}
 	}
 }
