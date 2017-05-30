@@ -2,11 +2,22 @@
 	position:relative;
 }
 
+.overview-section{
+	@include breakpoint(sm) {
+		padding:$baseline 0;
+	}
+}
+
 #profile-hero{
 	position:relative;
 	padding-bottom:$baseline*5;
 	@include breakpoint(sm) {
 		padding-bottom:$baseline*4;
+	}
+	.btn-view-gallery{
+		@include breakpoint(sm) {
+			padding:10px 18px;
+		}
 	}
 }
 
@@ -59,6 +70,22 @@
 
 //provider show
 
+.book-panel-header{
+	padding:12px 16px;
+	background:$text-color;
+	color:white;
+	@extend %white_text;
+	p{
+		margin:0;
+		font-family: $medium-font-name;
+		&.muted{
+			font-family: $regular-font-name;
+			color:rgba(255,255,255,.6)!important;
+			@include fontSize(12px);
+		}
+	}
+}
+
 .book-panel{
 	padding:16px 16px;
 	border:1px solid $border-color;
@@ -89,10 +116,6 @@
 			letter-spacing: 0;
 		}
 	}
-	&.active{
-		background:#fafafa;
-		box-shadow:inset 1px 0 $link-color;
-	}
 	ul.share-links{
 		list-style: none; 
 		li{
@@ -112,7 +135,8 @@
 		}
 	}
 	&.selected{
-		background-color:#fafafa;
+		background-color:tint($primary-color,97%);
+		box-shadow:inset 2px 0 $link-color;
 	}
 }
 

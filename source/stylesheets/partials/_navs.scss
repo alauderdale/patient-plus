@@ -1,43 +1,6 @@
 $provider-nav-padding: 24px;
 
 
-
-.provider-nav-mobile{
-	background: #FFFFFF;
-	border-bottom:1px solid $border-color;
-	padding:10px 0;
-	.menu-list-col{
-		float: left;
-		width:100%;
-		ul{
-			margin:0;
-			li{
-				@include fontSize(12px);
-				a{
-
-				}
-				&.active{
-					a{
-						color:black;
-					}
-				}
-			}
-		}
-	}
-	.book-btn-col{
-		position:fixed;
-		bottom:0px;
-		left:0px;
-		right:0px;
-		width:100%;
-		padding:10px;
-		.btn{
-			width:100%;
-		}
-	}
-
-}
-
 .provider-nav{
 	background: #FFFFFF;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
@@ -48,7 +11,7 @@ $provider-nav-padding: 24px;
 	z-index: 999;
 	height:74px;
 	@include breakpoint(sm) {
-		height:50px;
+		height:47px;
 	}
 	img{
 	}
@@ -59,7 +22,7 @@ $provider-nav-padding: 24px;
 	.nav-element-block{
 		width:225px;
 		@include breakpoint(md) {
-			width:174px;
+			width:161px;
 		}
 		a{
 			margin:18px;
@@ -85,7 +48,7 @@ $provider-nav-padding: 24px;
 				left:0px;
 				right:0px;
 				width:100%;
-				padding:10px;
+				padding:10px 20px;
 				.btn{
 					width:100%;
 					margin:0;
@@ -93,6 +56,8 @@ $provider-nav-padding: 24px;
 					display: block!important;
 					@include animation-duration(0s);
 					@include animation-delay(0s);
+					padding:12px;
+					@include fontSize(16px);
 				}
 			}
 		}
@@ -133,14 +98,18 @@ $provider-nav-padding: 24px;
 		.nav{
 			display: inline-block;
 			li{
+				text-transform: uppercase;
+				letter-spacing: 0.2px;
 				list-style: none;
 				display: inline-block;
-				@include fontSize(16px);
-
+				@include fontSize(13px);
+				font-family: $medium-font-name;
 				@include breakpoint(md) {
-					@include fontSize(14px);
+					@include fontSize(12px);
 				}
-
+				@include breakpoint(sm) {
+					@include fontSize(13px);
+				}
 				&.active{
 					a{
 						border-bottom:2px solid $link-color;

@@ -1,5 +1,11 @@
 .book-panel-outter
 .book-panel-wrapper#book-panel
+	.book-panel-header
+		%p.pull-left
+			3 locations
+		%p.pull-right.text-right.muted
+			Select most convenient
+		.clearfix
 	.half-margin-bottom
 		.book-panel
 			=partial"providers/book-panel-inner.haml"
@@ -8,8 +14,8 @@
 		.book-panel
 			=partial"providers/book-panel-inner.haml"
 		.book-panel.actions-panel
-			%a.btn.btn-block.btn-info.begin-show-actions.hidden-xs{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#bookStepOneModal"}
-				Request Appointment
+			%a.btn.btn-block.btn-info.begin-show-actions{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#bookStepOneModal"}
+				Request appointment
 			%a.btn.btn-block.btn-default{:href=>"#"}
 				%i.fa.fa-phone
 				345.566.4433
