@@ -1,12 +1,12 @@
 // typography baselines and @font face setups
 
 
-//fonts
+//fontss
 
 @font-face {
     font-family: 'gotham-bookgotham-book';
-    src: url('../font/gothmbok-webfont.woff2') format('woff2'),
-         url('../font/gothmbok-webfont.woff') format('woff');
+    src: url('../fonts/gothmbok-webfont.woff2') format('woff2'),
+         url('../fonts/gothmbok-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -17,8 +17,8 @@
 
 @font-face {
     font-family: 'gotham-boldgotham-bold';
-    src: url('../font/gothmbol-webfont.woff2') format('woff2'),
-         url('../font/gothmbol-webfont.woff') format('woff');
+    src: url('../fonts/gothmbol-webfont.woff2') format('woff2'),
+         url('../fonts/gothmbol-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -29,8 +29,8 @@
 
 @font-face {
     font-family: 'gotham-mediumgotham-medium';
-    src: url('../font/gothmmed-webfont.woff2') format('woff2'),
-         url('../font/gothmmed-webfont.woff') format('woff');
+    src: url('../fonts/gothmmed-webfont.woff2') format('woff2'),
+         url('../fonts/gothmmed-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -39,11 +39,11 @@
 
 @font-face {
     font-family: 'socialicoregular';
-    src: url('../font/socialico-webfont.eot');
-    src: url('../font/socialico-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/socialico-webfont.woff') format('woff'),
-         url('../font/socialico-webfont.ttf') format('truetype'),
-         url('../font/socialico-webfont.svg#socialicoregular') format('svg');
+    src: url('../fonts/socialico-webfont.eot');
+    src: url('../fonts/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/socialico-webfont.woff') format('woff'),
+         url('../fonts/socialico-webfont.ttf') format('truetype'),
+         url('../fonts/socialico-webfont.svg#socialicoregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -51,8 +51,8 @@
 
 @font-face {
     font-family: 'socialico_plusregular';
-    src: url('../font/socialico_plus-webfont.woff2') format('woff2'),
-         url('../font/socialico_plus-webfont.woff') format('woff');
+    src: url('../fonts/socialico_plus-webfont.woff2') format('woff2'),
+         url('../fonts/socialico_plus-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -107,7 +107,7 @@
 }
 
 
-//font families
+//fonts families
 
 .headline-font-name{
     font-family:$headline-font-name;
@@ -132,7 +132,7 @@
 
 
 
-//font color
+//fonts color
 
 .primary-text-color{
   color:$primary-color!important;
@@ -148,14 +148,14 @@
   }
 }
 
-//font size
+//fonts size
 
 
 
 
 
 
-//font base
+//fonts base
 
 
 
@@ -227,7 +227,7 @@ p{
 }
 
 
-//font awesome
+//fonts awesome
 
 
 

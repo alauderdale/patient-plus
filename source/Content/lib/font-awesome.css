@@ -1,13 +1,13 @@
 /*!
- *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ *  Font Awesome 4.2.0 by @davegandy - http://fontsawesome.io - @fontawesome
+ *  License - http://fontsawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../../font/fontawesome-webfont.eot?v=4.2.0');
-  src: url('../../font/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../../font/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../../font/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../../font/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  src: url('../../fonts/fontsawesome-webfont.eot?v=4.2.0');
+  src: url('../../fonts/fontsawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../../fonts/fontsawesome-webfont.woff?v=4.2.0') format('woff'), url('../../fonts/fontsawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../../fonts/fontsawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
