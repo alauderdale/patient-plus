@@ -108,7 +108,10 @@ $(document).ready(function(){
 
     $('.connected-dr-slider').lightSlider({
         item:3,
-        loop:false,
+        loop:true,
+        auto:true,
+        pauseOnHover: true,
+        pause:4000,
         controls: false,
         pager:true,
         slideMove:3,
