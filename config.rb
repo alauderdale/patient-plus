@@ -46,9 +46,9 @@ end
 
 # Methods defined in the helpers block are available in templates
 
-set :css_dir, 'stylesheets'
+set :css_dir, 'Content'
 
-set :js_dir, 'javascripts'
+set :js_dir, 'Scripts'
 
 set :images_dir, 'images'
 
