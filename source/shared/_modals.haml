@@ -1,4 +1,6 @@
 / Modals
+
+//insurance modal
 #infoModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
 	.modal-dialog{:role => "document"}
 		.modal-content
@@ -37,8 +39,49 @@
 
 
 
+//service modal
+#serviceModal.modal.service-modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content.no-border
+			.modal-header.no-padding.no-border
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} 
+						×
+				%img.img-responsive.full-width{:src=>"/images/tmp/servicepop.png"}
+			.half-padding.primary-bg
+				%h3.text-center.medium-font-name
+					Scaling & root planing
+			.padded.half-padding-top.half-padding-bottom
+				.padded.no-padding-sm
+					%p
+						=lorem.paragraphs(1)
+					%p
+						=lorem.paragraphs(1)
 
-#serviceModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+
+
+//Users modal
+#usersModal.modal.modal-scroll{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header.no-border-bottom.no-padding-bottom
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} 
+						×
+				%h3.modal-title 
+					Title goes here (44)
+				%hr.no-margin-bottom
+			.modal-body
+				.border-list
+					-40.times do
+						.border-bottom.half-padding-top.half-padding-bottom
+							=partial"shared/user-line-item"
+
+
+//share modal
+
+/ Modals
+#shareModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
 	.modal-dialog{:role => "document"}
 		.modal-content
 			.modal-header.no-border-bottom
@@ -46,57 +89,89 @@
 					%span{"aria-hidden" => "true"} 
 						×
 				%h3.modal-title 
-					Service Title
-				%hr.no-margin-bottom
+					Share
 			.modal-body
+				%h5.no-margin-top
+					Check out John Superlongname on PatientPlus.
+				.panel
+					.panel-body
+						%p.no-margin
+							%i.fa.fa-facebook.quarter-margin-right
+							%a.medium-font-name{:href=>"#"}
+								Facebook
+				.panel
+					.panel-body
+						%p.no-margin
+							%i.fa.fa-twitter.quarter-margin-right
+							%a.medium-font-name{:href=>"#"}
+								Twitter
+				.panel
+					.panel-body
+						%p.no-margin
+							%i.fa.fa-envelope.quarter-margin-right
+							%a.medium-font-name{:href=>"#"}
+								Email
+				.panel
+					.panel-body
+						%p.no-margin
+							%i.fa.fa-link.quarter-margin-right
+							%a.medium-font-name{:href=>"#"}
+								Copy link
 
 
 
 
+
+
+//booking modals
+
+//step 1
 #bookStepOneModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
 	.modal-dialog{:role => "document"}
-		.modal-content.half-padding-top.half-padding-bottom.half-padding-left.half-padding-right
+		.modal-content
 			.modal-header.no-border-bottom
 				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
 					%span{"aria-hidden" => "true"} 
 						×
 				%h4.modal-title.text-center.no-margin-bottom.bold-font-name
 					Let's book your appointment
-			.modal-body
-				.padded.no-padding-top.no-padding-bottom.quarter-padding-sm
-					.form-group
-						%p.quarter-margin-bottom.normel-font-name
-							Reason for visit
-						%select#reasonSelect.form-control.input-lg
-							%option 
-								General dentistry
-							%option 
-								Filling
-							%option 
-								Check-up
-							%option 
-								Other
-					.form-group
-						.double-margin-top
-							%p.margin-bottom.text-center
-								Fri. May 23, 2017
-							.date-slider
-								%a.btn.btn-default.btn-circle.pull-left{:href=>"#"}
-									%i.fa.fa-chevron-left
-								%a.btn.btn-default.btn-circle.pull-right{:href=>"#"}
-									%i.fa.fa-chevron-right
-								.clearfix
-							%hr
-						.time-block
-							.row
-								.btn-group.time-btn-group{"data-toggle"=>"buttons"}
-									-9.times do
-										%label.btn.btn-default.btn-block
-											%input{:type=>"radio", "name"=>"time-options","autocpmplete"=>"off"}
-												10:30AM
-			.modal-footer.no-border-top.text-center
+			.modal-body.no-padding-bottom
 				.row
-					.col-sm-12
+					.col-lg-12
+						.form-group
+							%p.quarter-margin-bottom.normel-font-name
+								Reason for visit
+							%select#reasonSelect.form-control.input-lg
+								%option 
+									General dentistry
+								%option 
+									Filling
+								%option 
+									Check-up
+								%option 
+									Other
+						.form-group
+							.double-margin-top
+								%p.margin-bottom.text-center
+									Thursday Nov. 23, 2017
+								.date-slider
+									%a.btn.btn-default.btn-circle.pull-left{:href=>"#"}
+										%i.fa.fa-chevron-left
+									%a.btn.btn-default.btn-circle.pull-right{:href=>"#"}
+										%i.fa.fa-chevron-right
+									.clearfix
+								%hr
+							.time-block
+								.row
+									.col-lg-12
+										.btn-group.time-btn-group{"data-toggle"=>"buttons"}
+											-9.times do
+												%label.btn.btn-default.btn-block
+													%input{:type=>"radio", "name"=>"time-options","autocpmplete"=>"off"}
+														10:30pm
+			.modal-footer.no-border-top.text-center.no-padding-top.padding-bottom
+				.row
+					.col-lg-12
 						%a.btn.btn-primary.btn-block{:href=>"#"}
 							Continue
 

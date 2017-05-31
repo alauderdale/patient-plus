@@ -39,7 +39,7 @@
 										%ul.list-unstyled.medium-font-name
 											- 10.times do
 												%li
-													%a{:href=>"#"}
+													%a{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#serviceModal"}
 														=lorem.words(2)
 			.col-sm-1
 		.row
@@ -59,18 +59,18 @@
 									.chip-info
 										%h5.no-margin.bold-font-name.light-text-color.full-width
 											Endorsed by
-											%a{:href=>"#"}
+											%a{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#usersModal"}
 												=lorem.name+","
 												=lorem.name
-												and 4 more
+												and 42 more
 									.chip-info
 										%ul.list-inline.text-right.full-width.avatars-list
-											-3.times do
+											-2.times do
 												%li
 													%a{:href=>"#"}
 														%img.avatar-sm.avatar-default{:src=>"/images/tmp/avatar-1.png"}
 											%li
-												%a{:href=>"#"}
+												%a{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#usersModal"}
 													.more
 														%i.fa.fa-ellipsis-h
 						.col-lg-1

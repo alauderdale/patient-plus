@@ -14,6 +14,8 @@ $(window).load(function(){
         $('.nav-logo').addClass("zoomIn");
     }).on('affix-top.bs.affix', function () {
         $('.nav-logo').removeClass("zoomIn");
+    }).on('affix-top.bs.affix', function () {
+        $('.provider-nav li:first-of-type').addClass("active");
     });
 
 

@@ -1,5 +1,17 @@
 %section#posts
 	.container
-		.col-lg-12
-			%h2.text-center.bold-font-name.headline-bordered.centered
-				Posts
+		.row
+			.col-md-3
+			.col-md-6
+				%h2.text-center.bold-font-name.headline-bordered.centered
+					Posts
+				.spacer-default
+					=partial"providers/posts/post-text"
+					=partial"providers/posts/post-link"
+					=partial"providers/posts/post-image"
+			.col-md-3
+		.row
+			.col-lg-12.text-center	
+				.margin-top
+					%a.btn.btn-default{:href=>"#"}
+						Load more

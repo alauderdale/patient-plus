@@ -213,6 +213,7 @@
 		}
 		h4{
 			margin-bottom:8px;
+			@include fontSize(16px);
 		}
 	  @include breakpoint(md) {
 	    position:relative;
@@ -284,20 +285,74 @@
 
 .date-slider{
 	margin-top:-64px;
+	.btn{
+		position:relative;
+		@include breakpoint(sm) {
+			&:nth-child(1){
+				right:18px;
+			}
+			&:nth-child(2){
+				left:18px;
+			}
+		}
+	}
 }
 .time-block{
 	.time-btn-group{
 		.btn{
 			width:31%;
 			margin:1%;
+			border-radius:0;
 			&.btn-default.active, &.btn-default:active, &.open>.dropdown-toggle.btn-default{
-				background-color:tint($primary-color,80%);
-				color:shade($primary-color,50%);
+				background-color:shade($primary-color,30%);
+				color:white;
 				box-shadow:none;
 				outline:none;
+				border-color:shade($primary-color,30%);
 			}
 			@include breakpoint(sm) {
-				width:48%;
+				// width:48%;
+				@include fontSize(13px);
+			}
+		}
+	}
+}
+
+
+//posts
+
+//link panel
+.link-panel{
+	position:relative;
+	.link-image{
+		width:30%;
+		background:url("http://placehold.it/300x300") no-repeat center center;
+		display: block;
+		float: left;
+		    position: absolute;
+    bottom: 0;
+    top: 0;
+		
+	}
+	.link-text{
+		float: left;
+		margin-left:30%;
+		width:68%
+	}
+}
+
+//share toolbar
+
+ul.share-toolbar{
+	li{
+		a{
+			color:$text-color;
+		}
+		&.like{
+			a{
+				&.liked{
+					color:red;
+				}
 			}
 		}
 	}

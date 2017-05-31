@@ -1,6 +1,15 @@
 
 
 .modal-dialog{
+	.modal-body, .modal-header, .modal-footer{
+		padding:15px $baseline;
+	}
+	.modal-header{
+		padding-top:$baseline;
+	}
+	.modal-body{
+		padding-top:0;
+	}
 	.modal-content{
 		border-radius:0px;
 		box-shadow: none;
@@ -8,5 +17,39 @@
 	.close{
 		font-family: $regular-font-name;
 		font-size: 34px;
+	}
+}
+
+
+
+.modal-scroll{
+	overflow: auto;
+	top:30px;
+	  @include breakpoint(sm) {
+	    top:5px;
+	  }
+	.modal-dialog{
+		margin:0 auto;
+	    overflow-y: initial !important;
+	}
+	.modal-body{
+	    overflow-y: auto;
+	    max-height: calc(100vh - 145px);
+	    @include breakpoint(sm) {
+	    	max-height: calc(100vh - 93px);
+	    }
+	}
+
+
+}
+
+.service-modal{
+	.close{
+	    color: white;
+	    margin-bottom: -33px;
+	    position: relative;
+	    top: 10px;
+	    right: 26px;
+	    opacity: 1;
 	}
 }

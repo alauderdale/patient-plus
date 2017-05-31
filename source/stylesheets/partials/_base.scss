@@ -100,3 +100,10 @@ img{
 .inline{
     display:inline;
 }
+
+//backgrounds
+
+.primary-bg{
+  background-color:$primary-color;
+  @extend %white_text;
+}

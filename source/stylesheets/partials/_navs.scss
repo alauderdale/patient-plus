@@ -121,7 +121,7 @@ $provider-nav-padding: 24px;
 				}
 				a{
 					@include transition-duration(.2s);
-					color:$light-text-color;
+					color:tint($text-color,20%);
 					padding:$provider-nav-padding 8px;
 					@include breakpoint(md) {
 						padding:$provider-nav-padding 2px;
