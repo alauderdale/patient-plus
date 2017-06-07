@@ -177,14 +177,14 @@
 
 .card-service{
 	position:relative;
-	box-shadow: 0 12px 24px 0 rgba(113,202,255,0.06), 0 12px 24px 0 rgba(0,0,0,0.11);
+	box-shadow: $shadow-depth-two;
 	width:100%;
 	background:red;
 	margin:$baseline/2 0;
 	top:0px;
 	@include transition(top 0.2s);
 	&:hover{
-		box-shadow: 0 12px 24px 0 rgba(113,202,255,0.06), 0 17px 29px 0 rgba(0,0,0,0.11);
+		box-shadow:$shadow-depth-two-hover;
     	top: -4px;
     	.card-footer{
     		// box-shadow: inset 3px 3px 0 rgba(0,0,0,.2), inset -3px -3px 0 rgba(0,0,0,.2);

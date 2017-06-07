@@ -79,10 +79,8 @@
 
 
 //share modal
-
-/ Modals
 #shareModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
-	.modal-dialog{:role => "document"}
+	.modal-dialog.modal-sm{:role => "document"}
 		.modal-content
 			.modal-header.no-border-bottom
 				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
@@ -127,7 +125,7 @@
 
 //step 1
 #bookStepOneModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
-	.modal-dialog{:role => "document"}
+	.modal-dialog.modal-sm{:role => "document"}
 		.modal-content
 			.modal-header.no-border-bottom
 				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
@@ -172,6 +170,6 @@
 			.modal-footer.no-border-top.text-center.no-padding-top.padding-bottom
 				.row
 					.col-lg-12
-						%a.btn.btn-primary.btn-block{:href=>"#"}
+						%a.btn.btn-primary.btn-block{:href=>"/booking/sign-in"}
 							Continue
 

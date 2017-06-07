@@ -18,6 +18,17 @@
 		font-family: $regular-font-name;
 		font-size: 34px;
 	}
+
+	&.modal-sm{
+		
+
+	  width:460px;
+
+	  @include breakpoint(sm) {
+	    width:auto;
+	  }
+
+	}
 }
 
 

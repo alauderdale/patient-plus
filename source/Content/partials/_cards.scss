@@ -1,5 +1,5 @@
 .dr-card{
-	box-shadow:0 12px 24px 0 rgba(113,202,255,0.03), 0 12px 24px 0 rgba(0,0,0,0.05);
+	box-shadow:$shadow-depth-two-light;
 	border:none;
 	.info-wrapper{
 		margin-top:-50px;
@@ -21,7 +21,9 @@
 	a{
 		color:$text-color;
 		&:hover{
-			color:$link-color;
+			p{
+				color:$link-hover-color!important;
+			}
 		}
 	}
 }

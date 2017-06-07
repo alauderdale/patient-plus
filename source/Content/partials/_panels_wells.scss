@@ -34,6 +34,11 @@
 			}
 		}
 	}
+	//panel sizes
+	&.panel-sm{
+		max-width:450px;
+		margin:0 auto;
+	}
 }
 
 .panel-chip{

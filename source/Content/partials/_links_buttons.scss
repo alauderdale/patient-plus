@@ -25,17 +25,18 @@ a{
 		}
 	}
 	&.btn-default{
+		border-color:shade($border-color,30%);
 		&:hover{
 			border-color:$link-color;
 			background-color:white;
-			color:shade($link-color,50%);
+			color:$link-hover-color;
 		}
 	}
 	&.btn-info{
-		background-color:$secondary-color;
+		background-color:$success-color;
 		border:none;
 		&:hover{
-			background-color:tint($secondary-color,20%);
+			background-color:tint($success-color,20%);
 		}
 	}
 	&.btn-circle{

@@ -1,0 +1,38 @@
+%section
+	.container
+		.row
+			.col-lg-3
+			.col-lg-6
+				.panel.panel-sm
+					.panel-body
+						.text-center
+							%h3.bold-font-name.half-margin-bottom
+								Appointment confirmed!
+							%p
+								Thanks John! We’ll send you an email with all the datails
+						.padded.no-padding-sm.half-padding-top
+							.half-margin-bottom
+								=partial"shared/user-line-item"
+							.row.half-margin-bottom
+								.col-xs-6
+									%h5.bold-font-name.quarter-margin-bottom
+										Location
+									%h5.no-margin-top
+										18 East 48th Street
+										%br
+										Suite 1502
+										%br
+										New York, NY 1001
+								.col-xs-6
+									%h5.bold-font-name.quarter-margin-bottom
+										Reason for visit
+									%h5.no-margin-top
+										General dentistry
+									%h5.bold-font-name.quarter-margin-bottom
+										Appointment
+									%h5.no-margin-top
+										Thurs, Apr 27 - 10:00am
+							%a.btn-lg.btn-block.btn-primary.btn{:href=>"/providers/show"}
+								Return to dentist profile
+
+			.col-lg-3

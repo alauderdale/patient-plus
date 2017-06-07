@@ -26,7 +26,7 @@ $(window).load(function(){
 $(document).ready(function(){
 
     //DELETE THIS adds class to repeated Middleman booking panel
-    $('.book-panel:nth-child(3)').addClass('selected'); 
+    $('.book-panel:nth-child(2)').addClass('selected'); 
 
 
     //adds class to selected location

@@ -1,0 +1,55 @@
+%section
+	.container
+		.row
+			.col-lg-3
+			.col-lg-6
+				.panel.panel-sm
+					.panel-body
+						.text-center
+							%h3.bold-font-name
+								Review & confirm appointment
+						.padded.no-padding-sm.half-padding-top
+							.half-margin-bottom
+								=partial"shared/user-line-item"
+							.row
+								.col-xs-6
+									%h5.bold-font-name.quarter-margin-bottom
+										Location
+									%h5.no-margin-top
+										18 East 48th Street
+										%br
+										Suite 1502
+										%br
+										New York, NY 1001
+								.col-xs-6
+							.row
+								.col-lg-12
+									%h4.quarter-margin-bottom
+										Insurance
+									.margin-bottom
+										.form-group
+											%select.form-control.input-lg
+												%option
+													Provider One
+										.form-group
+											%select.form-control.input-lg
+												%option
+													Provider One
+									%h4.quarter-margin-bottom
+										Appointment
+									.panel
+										.pull-right
+											.quarter-padding
+												%a.text-color{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#bookStepOneModal"}
+													%h4.no-margin
+														%i.fa.fa-pencil
+										.panel-body
+											%p.bold-font-name.no-margin-bottom
+												General dentistry
+												%br
+												%span.regular-font-name
+													Thurs, Apr 27 - 10:00am
+									%a.btn-lg.btn-block.btn-info.btn{:href=>"/booking/confirmed"}
+										Request appointment
+
+			.col-lg-3

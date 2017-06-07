@@ -12,7 +12,7 @@ $black-color: #262626;
 
 
 // alerts
-$green-color: #20C063;
+$green-color: #00bd70;
 $yellow-color: #ffd266;
 
 $success-color: $green-color;
@@ -33,7 +33,7 @@ $border-color: $light-gray-color;
 
 //links
 $link-color: $primary-color;
-$link-hover-color:shade($secondary-color, 50%);
+$link-hover-color:shade($primary-color, 40%);
 
 $background-color: #F4F8F8;
 
@@ -60,3 +60,10 @@ $base-transition-duration:.2s;
 //text columns
 
 $text-column-gutter-width: $baseline;
+
+// shadows
+
+$shadow-depth-two: 0 12px 24px 0 rgba(113,202,255,0.06), 0 12px 24px 0 rgba(0,0,0,0.11);
+$shadow-depth-two-hover: 0 12px 24px 0 rgba(113,202,255,0.06), 0 17px 29px 0 rgba(0,0,0,0.11);
+
+$shadow-depth-two-light: 0 12px 24px 0 rgba(113,202,255,0.01), 0 12px 24px 0 rgba(0,0,0,0.03);

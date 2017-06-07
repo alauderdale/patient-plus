@@ -1,28 +1,28 @@
 .panel.dr-card
-	.header-img
-		%img.img-responsive.full-width{:src=>"/Content/images/tmp/practice-bg-sm.png"}
-	.panel-body
-		.info-wrapper
-			.avatar-img.text-center.half-margin-bottom
-				%img.avatar-lg.avatar-default{:src=>"/Content/images/tmp/avatar-2.png"}
-			.text-center
-				%p.bold-font-name.no-margin-bottom
-					%a{:href=>"#"}
+	%a{:href=>"#"}
+		.header-img
+			%img.img-responsive.full-width{:src=>"/Content/images/tmp/practice-bg-sm.png"}
+		.panel-body
+			.info-wrapper
+				.avatar-img.text-center.half-margin-bottom
+					%img.avatar-lg.avatar-default{:src=>"/Content/images/tmp/avatar-2.png"}
+				.text-center
+					%p.bold-font-name.no-margin-bottom
 						=lorem.name
-				%h5.quarter-margin-top
-					Orthadontist
-			.card-footer.half-padding-top
-				.pull-left
-					%h6.extra-light-text-color.bold-font-name
-						Network
-				.pull-right
-					%ul.list-inline.text-right.avatars-list.avatars-list-xs
-						-3.times do
-							%li
-								%a{:href=>"#"}
-									%img.avatar-xs.avatar-default{:src=>"/Content/images/tmp/avatar-1.png"}
-						%li
-							%a{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#usersModal"}
-								.more
-									%i.fa.fa-ellipsis-h
-				.clearfix
+					%h5.quarter-margin-top
+						Orthadontist
+	.card-footer.half-padding-top.half-padding-right.half-padding-left
+		.pull-left
+			%h6.extra-light-text-color.bold-font-name
+				Network
+		.pull-right
+			%ul.list-inline.text-right.avatars-list.avatars-list-xs
+				-3.times do
+					%li
+						%a{:href=>"#"}
+							%img.avatar-xs.avatar-default{:src=>"/Content/images/tmp/avatar-1.png"}
+				%li
+					%a{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#usersModal"}
+						.more
+							%i.fa.fa-ellipsis-h
+		.clearfix
