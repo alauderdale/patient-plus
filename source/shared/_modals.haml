@@ -127,12 +127,14 @@
 #bookStepOneModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
 	.modal-dialog.modal-sm{:role => "document"}
 		.modal-content
-			.modal-header.no-border-bottom
+			.modal-header.no-border-bottom.text-center
 				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
 					%span{"aria-hidden" => "true"} 
 						×
 				%h4.modal-title.text-center.no-margin-bottom.bold-font-name
-					Let's book your appointment
+					Request an appointment
+				%h5.no-marign-bottom
+					We'll call you shortly to confirm
 			.modal-body.no-padding-bottom
 				.row
 					.col-lg-12
@@ -149,7 +151,7 @@
 								%option 
 									Other
 						.form-group
-							.double-margin-top
+							.margin-top
 								%p.margin-bottom.text-center
 									Thursday Nov. 23, 2017
 								.date-slider
