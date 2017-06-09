@@ -1,0 +1,50 @@
+.panel.provider-thumb.search-list-item
+	.panel-body
+		.row
+			.col-sm-8
+				.media.user-list-item
+					.media-left
+						%a{:href=>"#"}
+							%img.avatar-md.avatar-default.media-object{:src=>"/Content/images/tmp/avatar-1.png"}
+					.media-body
+						.quarter-margin-left
+							%p.media-heading.medium-font-name.no-margin
+								%a{:href=>"/providers/show"}
+									=lorem.name
+							%h5.quarter-margin-bottom.no-margin-top.medium-font-name
+								Orthadontist
+							.half-margin-bottom
+								%a.rating{:href=>"/providers/show#reviews"}
+									.pull-left
+										%span.star.full
+											%i.fa.fa-star
+										%span.star.full
+											%i.fa.fa-star
+										%span.star.full
+											%i.fa.fa-star
+										%span.star.full
+											%i.fa.fa-star
+										%span.star
+											%i.fa.fa-star
+									.pull-left.hidden-xs
+										%h6.medium-font-name.no-margin
+											400 reviews
+									.clearfix
+							%h5.no-margin
+								18 East 48th Street
+								%br
+								Suite 1502
+								%br
+								New York, NY 1001					
+			.col-sm-4
+				.text-center.margin-top
+					.hidden-xs
+						%a.btn.btn-info.half-margin-bottom{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#bookStepOneModal"}
+							Request appt
+						%h5.light-text-color.no-margin
+							Next avalible:
+							%br
+							Thur at 10:30pm
+					.visible-xs
+						%a.btn-default.btn.btn-sm.btn-block{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#bookStepOneModal"}
+							Next avalible: Thur at 10:00pm

@@ -44,6 +44,22 @@
 	}
 }
 
+
+.search-list{
+	.search-list-item{
+		margin:0;
+		border-bottom:none;
+		padding:0;
+		&:last-child{
+			margin-bottom:$baseline;
+			border-bottom:1px solid $border-color;
+		}
+		.panel-body{
+			padding:20px;
+		}
+	}
+}
+
 .provider-search-mobile{
 	.btn{
 		&.btn-default{
@@ -65,5 +81,16 @@
 				align-items:center;
 			}
 		}
+	}
+}
+
+
+.search-map-wrapper{
+	// width: 290px;
+	position: absolute;
+	right:0px;
+	top:20px;
+	.search-map{
+
 	}
 }

@@ -1,14 +1,23 @@
 %section#search-nav-section
 	.search-nav.nav-default#search-nav
 		.container
-			%form.half-margin-top.provider-search-mobile.visible-xs
-				%a.btn.btn-default.btn-block{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#providerSearchModal"}
-					.icon
-						%i.fa.fa-search
-					.text
-						General dentistry in 80000 | Aetna - NYC community plan
-			%form.half-margin-top.provider-search.hidden-xs
-				=partial"search/search-fields"
+			.row
+				.col-lg-12
+					%form.half-margin-top.provider-search-mobile.visible-xs
+						%a.btn.btn-default.btn-block{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#providerSearchModal"}
+							.icon
+								%i.fa.fa-search
+							.text
+								General dentistry in 80000 | Aetna - NYC community
+					%form.half-margin-top.provider-search.hidden-xs
+						=partial"search/search-fields"
+			.row
+				.col-md-7
+				.col-md-5
+					.hidden-sm.hidden-xs
+						.search-map-wrapper
+							.search-map
+								%img.full-width{:src=>"/Content/images/tmp/search-map.png"}
 
 %section#providerSearch.no-padding-top
 	.container
@@ -42,63 +51,13 @@
 								%a{:href=>"#"}
 									Top rated
 
-				-10.times do
-					.panel.provider-thumb.quarter-margin-bottom
-						.panel-body
-							.row
-								.col-sm-8
-									.media.user-list-item
-										.media-left
-											%a{:href=>"#"}
-												%img.avatar-md.avatar-default.media-object{:src=>"/Content/images/tmp/avatar-1.png"}
-										.media-body
-											.quarter-margin-left
-												%p.media-heading.medium-font-name.no-margin
-													%a{:href=>"/providers/show"}
-														=lorem.name
-												%h5.quarter-margin-bottom.no-margin-top.medium-font-name
-													Orthadontist
-												.half-margin-bottom
-													%a.rating{:href=>"#"}
-														.pull-left
-															%span.star.full
-																%i.fa.fa-star
-															%span.star.full
-																%i.fa.fa-star
-															%span.star.full
-																%i.fa.fa-star
-															%span.star.full
-																%i.fa.fa-star
-															%span.star
-																%i.fa.fa-star
-														.pull-left.hidden-xs
-															%h6.medium-font-name.no-margin
-																400 ratings
-														.clearfix
-												%h5.no-margin
-													18 East 48th Street
-													%br
-													Suite 1502
-													%br
-													New York, NY 1001					
-								.col-sm-4
-									.text-center.margin-top
-										.hidden-xs
-											%a.btn.btn-info.btn-block.half-margin-bottom{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#bookStepOneModal"}
-												Book now
-											%h5.light-text-color.no-margin
-												Next avalible:
-												%br
-												Thur at 10:30pm
-										.visible-xs
-											%a.btn-default.btn.btn-sm.btn-block{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#bookStepOneModal"}
-												Next avalible: Thur at 10:00pm
+				.search-list
+					-10.times do
+						=partial"search/provider-thumb"
 				%a.btn.btn-block.btn-default{:href=>"#"}
 					Load more
 			.col-md-5
-				.hidden-sm.hidden-xs
-					.search-map
-						%img.full-width{:src=>"/Content/images/tmp/search-map.png"}
+
 
 :javascript
 	$(window).load(function(){

@@ -5,8 +5,28 @@
 .dropdown-menu{
 	// box-shadow:none;
 	box-shadow: 0 2px 6px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.07);
-	border-radius:0px;
+	border-radius:3px;
 	border-color:$border-color;
+	li{
+		@include fontSize(14px);
+		a{
+			padding:$baseline/4 $baseline/2;
+			&:hover{
+				background:tint($primary-color,95%);
+			}
+		}
+		&.active{
+			a{
+				background:tint($primary-color,95%);
+				color:shade($text-color,50%);
+				box-shadow:inset 2px 0px 0px $link-color;
+				&:hover{
+					background:tint($primary-color,95%);
+					color:shade($text-color,50%);
+				}
+			}
+		}
+	}
 }
 
 
