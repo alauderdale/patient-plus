@@ -1,18 +1,24 @@
 $provider-nav-padding: 24px;
 
 
-.provider-nav{
-	background: #FFFFFF;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
-	text-align: center; 
-	position: absolute;
-	bottom:0;
+.nav-default{
 	width:100%;
 	z-index: 999;
+	background: #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+
+}
+
+.provider-nav{
+
 	height:74px;
 	@include breakpoint(sm) {
 		height:47px;
 	}
+
+	text-align: center; 
+	position: absolute;
+	bottom:0;
 	img{
 	}
 	.btn{
@@ -140,18 +146,19 @@ $provider-nav-padding: 24px;
 			}
 		}
 
-
-
-
-
-
 	}
 
+}
 
-
-  @include breakpoint(sm) {
-    
-  }
-
-
+#search-nav-section{
+	position:relative;
+	padding-top:$baseline;
+	.search-nav{
+		position:absolute;
+		border-top:1px solid $border-color;
+		top:0;
+		&.affix{
+			position:fixed!important;
+		}
+	}
 }

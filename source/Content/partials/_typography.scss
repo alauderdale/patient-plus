@@ -180,6 +180,7 @@ h2 {
 }
 h3 {
   @include fontSize(23px);
+  letter-spacing: -0.3px;
 }
 h4 {
   @include fontSize(18px);

@@ -133,13 +133,11 @@
 						×
 				%h4.modal-title.text-center.no-margin-bottom.bold-font-name
 					Request an appointment
-				%h5.no-marign-bottom
-					We'll call you shortly to confirm
 			.modal-body.no-padding-bottom
 				.row
 					.col-lg-12
 						.form-group
-							%p.quarter-margin-bottom.normel-font-name
+							%h5.quarter-margin-bottom.medium-font-name
 								Reason for visit
 							%select#reasonSelect.form-control.input-lg
 								%option 
@@ -152,7 +150,7 @@
 									Other
 						.form-group
 							.margin-top
-								%p.margin-bottom.text-center
+								%p.margin-bottom.text-center.medium-font-name
 									Thursday Nov. 23, 2017
 								.date-slider
 									%a.btn.btn-default.btn-circle.pull-left{:href=>"#"}
@@ -174,4 +172,21 @@
 					.col-lg-12
 						%a.btn.btn-primary.btn-block{:href=>"/booking/sign-in"}
 							Continue
+
+
+
+//step 1
+#providerSearchModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog.modal-sm{:role => "document"}
+		.modal-content
+			.modal-header.no-border-bottom.text-center
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} 
+						×
+				%h4.modal-title.text-center.no-margin-bottom.bold-font-name
+					Refine your search
+			.modal-body.no-padding-bottom
+				.row
+					.col-lg-12
+						=partial"search/search-fields"
 

@@ -1,0 +1,69 @@
+%search_input{
+	border-color:$border-color!important;
+	@include fontSize(15px);
+	box-shadow:0 1px 3px 0px rgba(0, 0, 0, 0.08) !important;
+	font-family:$regular-font-name;
+}
+
+.provider-search{
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	display:flex;
+	.form-group{
+		float: left;
+		margin-right:8px;
+		display:inline-flex;
+	}
+	.form-control, .btn{
+
+	}
+	.form-control{
+		//these are the input elements only
+		@extend %search_input;
+	}
+	.field-reason{
+		width:38%;
+	}
+	.field-zip{
+		width:15%;
+	}
+	.field-carrier{
+		width:20%;
+	}
+	.field-plan{
+		width:20%;
+	}	
+	.btn-search{
+		width:7%;
+		margin-right:0;
+		.btn{
+			padding:0!important;
+			min-width:100%;
+		}
+	}
+}
+
+.provider-search-mobile{
+	.btn{
+		&.btn-default{
+			margin-bottom:15px;
+			text-align:left;
+			@extend %search_input;
+			white-space: normal!important;
+			display: flex;
+			@include fontSize(13px);
+			.icon{
+				display: inline-flex;
+				vertical-align: middle;
+				align-items:center;
+				margin-right:15px;
+				@include fontSize(16px);
+			}
+			.text{
+				display: inline-flex;
+				align-items:center;
+			}
+		}
+	}
+}

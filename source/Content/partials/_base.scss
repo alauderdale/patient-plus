@@ -26,7 +26,7 @@ body{
   zoom:1;
   font-style: normal!important;
   font-family: $regular-font-name;
-  background-color:white;
+  background-color:$background-color;
 
   @include breakpoint(sm) {
 

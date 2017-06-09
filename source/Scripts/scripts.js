@@ -1,28 +1,3 @@
-$(window).load(function(){
-
-
-    //affixes the provider nav when scrolling past it
-    $('.provider-nav').affix({
-        offset: {
-            top: $('.provider-nav').offset().top,
-        }
-    }).on('affix.bs.affix', function () {
-        $('.nav-action').addClass("fadeIn");
-    }).on('affix-top.bs.affix', function () {
-        $('.nav-action').removeClass("fadeIn");
-    }).on('affix.bs.affix', function () {
-        $('.nav-logo').addClass("zoomIn");
-    }).on('affix-top.bs.affix', function () {
-        $('.nav-logo').removeClass("zoomIn");
-    }).on('affix-top.bs.affix', function () {
-        $('.provider-nav li:first-of-type').addClass("active");
-    });
-
-
-});
-
-
-
 $(document).ready(function(){
 
     //DELETE THIS adds class to repeated Middleman booking panel

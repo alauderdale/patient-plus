@@ -42,5 +42,20 @@ a{
 	&.btn-circle{
 		border-radius:100px;
 	}
+	&.btn-link{
+		&.btn-filter{
+			@include fontSize(13px);
+			font-family: $medium-font-name;
+			color:$text-color;
+			padding:8px 8px;
+			&:hover, &:focus{
+				text-decoration: none;
+				background-color:rgba(0,0,0,.05);
+			}
+		}
+	}
+	&.btn-sm{
+		@include fontSize(13px);
+	}
 }
 
