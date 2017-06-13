@@ -185,8 +185,59 @@
 						×
 				%h4.modal-title.text-center.no-margin-bottom.bold-font-name
 					Refine your search
-			.modal-body.no-padding-bottom
+			.modal-body
 				.row
 					.col-lg-12
 						=partial"search/search-fields"
+
+
+
+
+//reset password step one modal
+#resetPasswordStepOneModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog.modal-sm{:role => "document"}
+		.modal-content
+			.modal-header.no-border-bottom
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} 
+						×
+				%h3.modal-title 
+					Reset password
+			.modal-body
+				%p.no-margin-top
+					Enter the email address associated with your account, and we’ll email you a link to reset your password.
+				%form
+					.form-group.margin-bottom
+						%input.form-control{:type=>"text", :placeholder=>"Email"}
+					.text-right.margin-top
+						%a.btn.btn-primary{:onclick => "$('#resetPasswordStepOneModal').modal('hide');","data-toggle"=>"modal","data-target"=>"#resetPasswordStepTwoModal"}
+							Send reset link
+
+
+
+//reset password step one modal
+#resetPasswordStepTwoModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog.modal-sm{:role => "document"}
+		.modal-content
+			.modal-header.no-border-bottom
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} 
+						×
+				%h3.modal-title 
+					Reset password
+			.modal-body
+				%p.no-margin-top
+					We've sent a password reset link to 
+					%span.medium-font-name
+						john@doe.com.
+
+					If you have not received an email within 5 minutes, you may have used a different email address to sign up for PatientPlus. 
+					%a{:href => "javaScript:void(0);", :onclick => "$('#resetPasswordStepTwoModal').modal('hide');","data-toggle"=>"modal","data-target"=>"#resetPasswordStepOneModal"}
+						Click here 
+					to try another email address.
+				.text-right.margin-top
+					%a.btn.btn-primary{:onclick => "$('#resetPasswordStepTwoModal').modal('hide');"}
+						Done
+
+
 

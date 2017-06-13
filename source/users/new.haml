@@ -1,0 +1,52 @@
+%section.padding-top
+	.container
+		.row
+			.col-md-3.col-sm-2
+			.col-md-6.col-sm-8
+				.panel
+					.panel-body
+						.padded
+							.row
+								.col-lg-12
+									.text-center
+										%h3.medium-font-name.quarter-margin-bottom.no-margin-top
+											Sign up for PatientPlus
+										%h5
+											%a{:href=>"/signin"}
+												Already have an account? Sign in.
+
+									.form-group
+										%label
+											First name
+										%input.form-control.input-lg{:placeholder=>"Ex: John"}
+									.form-group
+										%label
+											Last name
+										%input.form-control.input-lg{:placeholder=>"Ex: Doe"}
+									.form-group
+										%label
+											Email
+										%input.form-control.input-lg{:placeholder=>"Ex: john@doe.com"}
+									.form-group
+										%label
+											Phone
+										%input.form-control.input-lg{:placeholder=>"Ex: 333-444-5555"}
+									.form-group
+										%label
+											Create password
+										%input.form-control.input-lg
+									.margin-top
+										%a.btn-lg.btn-block.btn-primary.btn{:href=>"/search"}
+											Sign up
+									%h5.no-margin-bottom
+										By clicking "Sign In" I agree to the 
+										%a{:href=>"#"}
+											Terms of Use 
+										and the
+										%a{:href=>"#"} 
+											Privacy Policy
+
+
+									
+
+			.col-md-3.col-sm-2

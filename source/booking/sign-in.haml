@@ -37,7 +37,7 @@
 											New to PatientPlus?
 										%h5.text-center.no-margin-top
 											Sign up for a PatientPlus account to book an appointment.
-										%button.btn-lg.btn-block.btn-primary.btn{:type=>"button"}
+										%a.btn-lg.btn-block.btn-primary.btn{:href=>"/booking/sign-up"}
 											Join now
 									%p.text-center.medium-font-name
 										Sign in to your Patient Plus account
@@ -46,10 +46,10 @@
 									.form-group
 										%input.form-control.input-lg{:placeholder=>"Password"}
 									.form-group
-										%a.btn-lg.btn-block.btn-default.btn{:href=>"/booking/review"}
+										%a.btn-lg.btn-block.btn-primary.btn{:href=>"/booking/review"}
 											Sign In
 									.form-group.text-center
-										%a{:href=>"#"}
+										%a{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#resetPasswordStepOneModal"}
 											Forgot password?
 
 									

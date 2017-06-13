@@ -14,8 +14,9 @@
 }
 
 label{
-	font-family:$medium-font-name;
+	font-family:$regular-font-name;
 	@include fontSize(14px);
+	font-weight:normal;
 }
 
 

@@ -1,0 +1,81 @@
+%section.padding-top
+	.container
+		.row
+			.col-lg-3
+			.col-lg-6
+				.panel.panel-sm
+					.panel-body
+						%h3.bold-font-name.text-center
+							Let's request your appointment!
+						.padded.no-padding-sm.half-padding-top
+							.half-margin-bottom
+								=partial"shared/user-line-item"
+							.row
+								.col-xs-6
+									%h5.no-margin-top.quarter-margin-bottom.medium-font-name
+										Location
+									%h5.no-margin-top.light-text-color
+										18 East 48th Street
+										%br
+										Suite 1502
+										%br
+										New York, NY 1001
+								.col-xs-6
+									%h5.no-margin-top.quarter-margin-bottom.medium-font-name
+										Reason for visit
+									%h5.no-margin-top.light-text-color
+										General dentistry
+									%h5.no-margin-top.quarter-margin-bottom.medium-font-name
+										Appointment
+									%h5.no-margin-top.light-text-color
+										Thurs, Apr 27 - 10:00am
+							%hr.no-margin-top
+							.row
+								.col-lg-12
+									.text-center
+										%h3.medium-font-name.quarter-margin-bottom.no-margin-top
+											Sign up for PatientPlus
+										%h5
+											%a{:href=>"/booking/sign-in"}
+												Already have an account? Sign in.
+
+									.form-group
+										%label
+											First name
+										%input.form-control.input-lg{:placeholder=>"Ex: John"}
+									.form-group
+										%label
+											Last name
+										%input.form-control.input-lg{:placeholder=>"Ex: Doe"}
+									.form-group
+										%label
+											Email
+										%input.form-control.input-lg{:placeholder=>"Ex: john@doe.com"}
+									.form-group
+										%label
+											Phone
+										%input.form-control.input-lg{:placeholder=>"Ex: 333-444-5555"}
+									.form-group
+										%label
+											Create password
+										%input.form-control.input-lg
+
+									.checkbox
+										%label
+											%input{:type=>"checkbox", :checked=>"checked"}
+											Connect and access recommendations from Dr. Barillas's professional network.
+
+									.margin-top
+										%a.btn-lg.btn-block.btn-primary.btn{:href=>"/booking/review"}
+											Sign up
+									%h5.no-margin-bottom
+										By clicking "Sign In" I agree to the 
+										%a{:href=>"#"}
+											Terms of Use 
+										and the
+										%a{:href=>"#"} 
+											Privacy Policy
+
+									
+
+			.col-lg-3
