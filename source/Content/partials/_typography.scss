@@ -78,6 +78,14 @@
   color:$text-color;
 }
 
+.facebook-text-color{
+  color:#3B5998!important;
+}
+
+.twitter-text-color{
+  color:#1DA1F2!important;
+}
+
 .body-text-color{
   color:$body-text-color;
 }
@@ -87,11 +95,11 @@
 }
 
 .light-text-color{
-  color:$light-text-color;
+  color:$light-text-color!important;
 }
 
 .extra-light-text-color{
-  color:$extra-light-text-color;
+  color:$extra-light-text-color!important;
 }
 
 .text-success{

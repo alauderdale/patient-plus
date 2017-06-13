@@ -21,7 +21,7 @@ a{
 		background-color:$link-color;
 		border:none;
 		&:hover{
-			background-color:shade($link-color,10%);
+			background-color:tint($link-color,10%);
 		}
 	}
 	&.btn-default{
@@ -56,6 +56,9 @@ a{
 	}
 	&.btn-sm{
 		@include fontSize(13px);
+	}
+	&.disabled{
+		background-color:tint($gray-color,50%);
 	}
 }
 

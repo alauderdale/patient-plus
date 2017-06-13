@@ -50,31 +50,34 @@
 					.row
 						.col-lg-1
 						.col-lg-10
-							-4.times do
-								.panel-chip
-									.chip-info
-										.chip
-											%h5.no-margin
-												%span.bold-font-name
-													Scaling & Root Planning
-												43
-									.chip-info
-										%h5.no-margin.bold-font-name.light-text-color.full-width
-											Endorsed by
-											%a{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#usersModal"}
-												=lorem.name+","
-												=lorem.name
-												and 42 more
-									.chip-info
-										%ul.list-inline.text-right.full-width.avatars-list
-											-2.times do
-												%li
-													%a{:href=>"#"}
-														%img.avatar-sm.avatar-default{:src=>"/Content/images/tmp/avatar-1.png"}
-											%li
-												%a{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#usersModal"}
-													.more
-														%i.fa.fa-ellipsis-h
+							.panel
+								.padded
+									-4.times do
+										.panel-chip
+											.chip-info
+												.chip
+													%h5.no-margin
+														%span.bold-font-name
+															Scaling & Root Planning
+														43
+											.chip-info
+												%h5.no-margin.full-width
+													Endorsed by
+													%span.bold-font-name
+														%a{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#usersModal"}
+															=lorem.name+","
+															=lorem.name
+															and 42 more
+											.chip-info
+												%ul.list-inline.full-width.avatars-list
+													-2.times do
+														%li
+															%a{:href=>"#"}
+																%img.avatar-sm.avatar-default{:src=>"/Content/images/tmp/avatar-1.png"}
+													%li
+														%a{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#usersModal"}
+															.more
+																%i.fa.fa-ellipsis-h
 						.col-lg-1
 
 
