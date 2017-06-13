@@ -42,14 +42,10 @@
 }
 
 .panel-chip{
-	border-radius:100px;
-	padding:10px;
+	padding:10px 0;
 	display:flex;
 	margin-bottom:8px;
 	width:100%;
-	@include breakpoint(sm) {
-		border-radius:0px;
-	}
 	.chip-info{
 		display:inline-flex;
 		vertical-align: middle;
@@ -92,6 +88,17 @@
 		display: inline-block;
 	}
 }
+
+
+//chips
+	.chip {
+	    display: inline-block;
+	    padding: 10px 25px;
+	    font-size: 16px;
+	    line-height: 50px;
+	    border-radius: 25px;
+	    background-color: tint($text-color, 90%);
+	}
 
 //accordian specific styling
 .acordian-default{
