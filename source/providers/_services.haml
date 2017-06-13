@@ -7,13 +7,13 @@
 					Services
 				.spacer-default
 					.row.row-centered
-						-3.times do
-							.col-sm-4.col-xs-6.col-centered	
+						-8.times do
+							.col-sm-3.col-xs-6.col-centered	
 								%a{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#serviceModal"}
 									.card-service
 										%img.img-responsive{:src=>"/Content/images/tmp/service-bg@2x.png"}
 										.card-footer.text-center
-											%h4.bold-font-name
+											%h4.bold-font-name.no-margin-bottom
 												Scaling & Root Planning 
 											%span.hidden-sm.hidden-xs
 												%h5.bold-font-name
@@ -30,10 +30,10 @@
 						-5.times do
 							.col-lg-4.col-md-6.col-xs-12	
 								.row.margin-bottom
-									.col-xs-2
-										.service-icon
-											%img{:src=>"/Content/images/icon-tooth.png"}
-									.col-xs-10
+									/ .col-xs-2
+									/ 	.service-icon
+									/ 		%img{:src=>"/Content/images/icon-tooth.png"}
+									.col-xs-12
 										%h6.light-text-color.half-margin-bottom.medium-font-name
 											Comfort & TECHNOLOGY
 										%ul.list-unstyled.medium-font-name

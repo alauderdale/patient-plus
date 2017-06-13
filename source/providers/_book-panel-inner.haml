@@ -2,13 +2,13 @@
 	.pull-left
 		%label.no-marign-bottom.quarter-margin-top.location-select
 			.pull-left.half-margin-right
-				%input{:type=>"radio", :name=>"locationRadio", :id=>"locationsRadio1", :checked=>"checked"}
+				%input.hidden{:type=>"radio", :name=>"locationRadio", :id=>"locationsRadio1", :checked=>"checked"}
 			.pull-left.btn-location
 				%h5.no-margin
 					1375 Blossom Hill Road
 					%br
 					San Jose, CA, 95118
-		%h5.margin-left.no-margin-top.no-margin-bottom
+		%h5.no-margin-top.no-margin-bottom
 			.dropdown
 				%a.btn-hours.dropdown-toggle{:href=>"javascript:void(0)", "data-toggle"=>"dropdown"}
 					%span.bold-font-name

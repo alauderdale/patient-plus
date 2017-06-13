@@ -186,6 +186,9 @@
 		box-shadow:$shadow-depth-two-hover;
     	top: -4px;
     	.card-footer{
+    		h5{
+    			opacity: 1;
+    		}
     		// box-shadow: inset 3px 3px 0 rgba(0,0,0,.2), inset -3px -3px 0 rgba(0,0,0,.2);
     	}
 	}
@@ -205,19 +208,21 @@
 		background:rgba(9, 134, 181, 0.92);
 		color:white;
 		padding:10px 5px;
-		min-height: 50px;
+		min-height: 30px;
 		@include transition-duration(.2s);
 		a{
 			color:white;
 		}
 		h4{
-			margin-bottom:8px;
-			@include fontSize(16px);
+			@include fontSize(13px);
+		}
+		h5{
+			opacity: .8;
 		}
 	  @include breakpoint(md) {
 	    position:relative;
 		h4{
-			@include fontSize(13px);
+			@include fontSize(12px);
 			line-height: 1.1rem;
 			vertical-align: middle;
 			display: inline-flex;
