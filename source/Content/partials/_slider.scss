@@ -63,6 +63,36 @@
 
 }
 
+//connected dr slider
+
+.connected-dr-slider-wrapper{
+	.lSSlideWrapper{
+		overflow:visible;
+	}
+	.lSAction > a{
+		top:auto;
+		bottom:-23px;
+		height:34px;
+	}
+	.lSAction > .lSNext{
+		right:30%;
+		@include breakpoint(sm) {
+    		right:10%;
+  		}
+	}
+	.lSAction > .lSPrev{
+		left:30%;
+		@include breakpoint(sm) {
+    		left:10%;
+  		}
+	}
+	.lSPager.lSpg{
+		position: relative;
+		top:-10px;
+	}
+}
+
+
 //gallery slider
 
 .lg-sub-html p{
@@ -77,3 +107,5 @@
 	border-radius:0;
 	border:2px solid $gray-color;
 }
+
+

@@ -5,6 +5,13 @@ $(document).ready(function(){
 
 
     //adds class to selected location
+    // $('.book-panel').click(function() { 
+    //     $('.book-panel').removeClass('selected'); 
+    //     $(this).addClass('selected'); 
+    // });
+
+
+    //adds class to selected location
     $('.location-select input').change(function() { 
         $('.book-panel').removeClass('selected'); 
         console.log('change');
@@ -87,11 +94,12 @@ $(document).ready(function(){
         auto:true,
         pauseOnHover: true,
         pause:4000,
-        controls: false,
+        controls: true,
         pager:true,
         slideMove:3,
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
         speed:900,
+        addClass: 'connected-dr-slider-wrapper',
         responsive : [
             {
                 breakpoint:1000,

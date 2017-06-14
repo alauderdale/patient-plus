@@ -93,6 +93,11 @@
 	width:100%;
 	border-top:none;
 	background:white;
+	h5{
+		&:hover{
+			color: $link-color;
+		}
+	}
 	&:first-of-type{
 		border-top:1px solid $border-color;
 	}
