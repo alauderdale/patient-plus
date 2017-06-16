@@ -49,11 +49,12 @@ ul.avatars-list{
 	margin:0;
 	padding-right:20px;
 	li{
-		margin-right:-20px;
+		margin-right:-19px;
 		text-align:center;
 
 		a{
 			color:$text-color;
+			display: block;
 			.more{
 				width:40px;
 				height:40px;
@@ -62,9 +63,13 @@ ul.avatars-list{
 				i{
 					margin-top: 12px;
 				}
-			&:hover{
-				background-color:shade($background-color,5%);
+				&:hover{
+					background-color:shade($background-color,5%);
+				}
 			}
+			&:hover{
+				z-index: 9999;
+				opacity: .9;
 			}
 		}
 
