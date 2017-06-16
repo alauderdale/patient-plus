@@ -239,5 +239,43 @@
 					%a.btn.btn-primary{:onclick => "$('#resetPasswordStepTwoModal').modal('hide');"}
 						Done
 
+/popovers
 
+
+#dr-hovercard.hidden
+	.popover-body
+		.popover-container{:style=>"width:281px;"}
+			.quarter-padded
+				.row
+					.col-xs-2
+						%img.avatar-sm.avatar-default{:src=>"/Content/images/tmp/avatar-1.png"}
+					.col-xs-10
+						%h5.no-margin-bottom.no-margin-top.medium-font-name
+							%a.link-color{:href=>"#"}
+								Dr. John Doe, MD
+						%h5.no-margin-top.no-margin-bottom.light-text-color
+							Orthadontist
+						%h6.quarter-margin-top.quarter-margin-bottom
+							%a.link-color{:href=>"#"}
+								.rating.pull-left{:style=>"margin-right:5px;"}
+									%span.star.full
+										%i.fa.fa-star
+									%span.star.full
+										%i.fa.fa-star
+									%span.star.full
+										%i.fa.fa-star
+									%span.star.full
+										%i.fa.fa-star
+									%span.star
+										%i.fa.fa-star
+								.pull-left
+									50 Reviews
+						.clearfix
+						/ add for map version
+						/ %h5.no-margin-bottom.light-text-color
+						/ 	18 East 48th Street
+						/ 	%br
+						/ 	Suite 1502
+						/ 	%br
+						/ 	New York, NY 1001
 

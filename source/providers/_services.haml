@@ -53,14 +53,16 @@
 							.panel
 								.padded
 									-4.times do
-										.panel-chip
-											.chip-info
+										.panel-endorse
+											.grid-info
 												.chip
 													%h5.no-margin
 														%span.bold-font-name
 															Scaling & Root Planning
 														43
-											.chip-info
+												%a.btn.btn-default.btn-rounded.check-btn{:href=>"#", "data-toggle"=>"tooltip", "data-placement"=>"top", "title"=>"Endorse this service"}
+													%i.fa.fa-plus
+											.grid-info
 												%h5.no-margin.full-width
 													Endorsed by
 													%span.bold-font-name
@@ -68,17 +70,18 @@
 															=lorem.name+","
 															=lorem.name
 															and 42 more
-											.chip-info
+											.grid-info
 												%ul.list-inline.full-width.avatars-list
 													-2.times do
 														%li
-															%a{:href=>"#"}
+															%a.dr-hovercard-trigger.display-block{:href=>"#", "data-popover-content"=>"#dr-hovercard"}
 																%img.avatar-sm.avatar-default{:src=>"/Content/images/tmp/avatar-1.png"}
 													%li
 														%a{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#usersModal"}
 															.more
 																%i.fa.fa-ellipsis-h
 						.col-lg-1
+
 
 
 

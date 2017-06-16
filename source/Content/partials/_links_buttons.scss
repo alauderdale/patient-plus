@@ -60,5 +60,8 @@ a{
 	&.disabled{
 		background-color:tint($gray-color,50%);
 	}
+	&.btn-rounded{
+		border-radius:100px;
+	}
 }
 

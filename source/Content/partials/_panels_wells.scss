@@ -41,61 +41,7 @@
 	}
 }
 
-.panel-chip{
-	display:flex;
-	width:100%;
-	border-bottom:1px solid $border-color;
-	padding:$baseline 0;
-	&:first-of-type{
-		padding-top:0;
-	}
-	&:last-of-type{
-		border:none;
-		padding-bottom:0;
-	}
-	.chip-info{
-		display:inline-flex;
-		vertical-align: middle;
-		align-items:center;
-		&:nth-child(1){
-			width:30%;
-			@include breakpoint(md) {
-				width:40%!important;
-			}
-			@include breakpoint(sm) {
-				width:100%!important;
-				margin-bottom:$baseline/2;
-			}
-		}
-		&:nth-child(2){
-			width:45%;
-			@include breakpoint(md) {
-				width:59%!important;
-			}
-			@include breakpoint(sm) {
-				width:100%!important;
-				margin-left:10px;
-				margin-bottom:10px;
-			}
-			
-		}
-		&:nth-child(3){
-			width:25%;
-			text-align: right;
-			@include breakpoint(md) {
-				width:100%!important;
-				text-align: left;
-				display: none;
-			}
-		}
-		ul{
-			margin-bottom:0;
-		}
-	}
-	@include breakpoint(md) {
-		display: inline-block;
-	}
-}
+
 
 
 //chips
