@@ -1,0 +1,25 @@
+<!doctype html>
+%html
+	%head
+		= partial "shared/scripts-provider"
+		%body{:class => page_classes, :style=>"background:white;"}
+			= partial "shared/modals-provider"
+			#main-content-provider
+				.page-content
+					.display-block
+						.page-content-inner
+							.provider-header
+								.provider-header-inner
+									.page-header-title-wrapper
+										%h2.page-header-title
+											Profile Plus
+									.admin-menu
+										.admin-menu-inner
+											%form.main-nav-search
+												%input.form-control{:type=>"text", :placeholder=>"search"}
+											.main-nav-avatar{:style=>"background-image:url('/Content/images/tmp/avatar-1.png');"}
+							.main
+								= yield
+								
+									
+			= partial "layouts/main-menu-provider"

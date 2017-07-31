@@ -17,7 +17,11 @@ label{
 	font-family:$regular-font-name;
 	@include fontSize(14px);
 	font-weight:normal;
+	&.bold-label{
+		font-family:$medium-font-name;
+	}
 }
+
 
 
 // ::-webkit-input-placeholder { /* Chrome/Opera/Safari */

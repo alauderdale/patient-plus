@@ -1,0 +1,93 @@
+;;;
+	"layout": "provider",
+	"title": "Dashboard"
+;;;
+
+.main-content
+	.subheader
+		.subheader-inner
+			%p.subjeader-title
+				Edit profile
+	.main-content-inner
+		%p.light-text-color
+			Text explaining what this section is and why it's important.
+		.menu-list.margin-top
+			.panel.half-margin-bottom
+				%a{:href=>"/provider/profileplus/summary/"}
+					.half-padded
+						.pull-left
+							%p.no-margin-bottom
+								Summary
+						.pull-right
+							%i.fa.fa-chevron-right
+						.clearfix	
+			.panel.half-margin-bottom
+				%a{:href=>"/provider/profileplus/about"}
+					.half-padded
+						.pull-left
+							%p.no-margin-bottom
+								About
+						.pull-right
+							%i.fa.fa-chevron-right
+						.clearfix	
+			.panel.half-margin-bottom
+				%a{:href=>"#"}
+					.half-padded
+						.pull-left
+							%p.no-margin-bottom
+								Images and videos
+						.pull-right
+							%i.fa.fa-chevron-right
+						.clearfix	
+			.panel.half-margin-bottom
+				%a{:href=>"/provider/profileplus/locations"}
+					.half-padded
+						.pull-left
+							%p.no-margin-bottom
+								Locations
+						.pull-right
+							%i.fa.fa-chevron-right
+						.clearfix	
+			.panel.half-margin-bottom
+				%a{:href=>"/provider/profileplus/endorsements"}
+					.half-padded
+						.pull-left
+							%p.no-margin-bottom
+								Services
+						.pull-right
+							%i.fa.fa-chevron-right
+						.clearfix	
+			.panel.half-margin-bottom
+				%a{:href=>"/provider/profileplus/endorsements"}
+					.half-padded
+						.pull-left
+							%p.no-margin-bottom
+								Endorsements
+						.pull-right
+							%i.fa.fa-chevron-right
+						.clearfix	
+			.panel.half-margin-bottom
+				%a{:href=>"#"}
+					.half-padded
+						.pull-left
+							%p.no-margin-bottom
+								Team
+						.pull-right
+							%i.fa.fa-chevron-right
+						.clearfix		
+			.panel.half-margin-bottom
+				%a{:href=>"#"}
+					.half-padded
+						.pull-left
+							%p.no-margin-bottom
+								Reviews
+						.pull-right
+							%i.fa.fa-chevron-right
+						.clearfix		
+
+//begin sidebar
+.provider-sidebar
+	.sidebar-inner
+		.sidebar-menu
+			%a.btn.btn-block.btn-primary{:href=>"/providers/show", :target=>"_blank"}
+				Preview

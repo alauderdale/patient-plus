@@ -162,3 +162,24 @@ $provider-nav-padding: 24px;
 		}
 	}
 }
+
+.menu-list{
+	.panel{
+		border:none;
+		a{
+			background:$background-color;
+			display: block;
+			@include transition-duration(.2s);
+			&:hover{
+				background:shade($background-color,3%);
+			}
+			p{
+				font-size: .95em;
+				font-family: $medium-font-name;
+			}
+			i{
+				color:shade($light-gray-color,10%);
+			}
+		}
+	}
+}

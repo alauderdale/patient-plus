@@ -1,0 +1,152 @@
+;;;
+	"layout": "provider",
+	"title": "Location"
+;;;
+
+.main-content
+	.subheader
+		.subheader-inner
+			%p.subjeader-title
+				%a{:href=>"/provider/profileplus"}
+					%i.fa.fa-arrow-left.quarter-margin-right
+				Locations
+			.autosaved
+				%h5.light-text-color
+					Autosaved
+	.main-content-inner
+		%p.light-text-color
+			Text explaining what this section is and why it's important.
+		.margin-top
+			-2.times do
+				.panel.half-margin-bottom
+					.half-padded
+						.pull-left
+							%h5.no-margin-top.no-margin-bottom.medium-font-name
+								New location
+							%h5.no-margin-bottom.no-margin-top
+								123 Dental place Manhattan NY 99999
+						.pull-right
+							%h3.no-margin-bottom.quarter-margin-top
+								%a.light-text-color.half-margin-right{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#addLocationModal"}
+									%i.fa.fa-pencil
+								%a.light-text-color.half-margin-right{:href=>"#"}
+									%i.fa.fa-trash-o
+						.clearfix	
+			%a.btn.btn-default.btn-sm{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#addLocationModal"}
+				+ Add
+
+
+
+
+			
+
+//begin sidebar
+.provider-sidebar
+	.sidebar-inner
+		.sidebar-menu
+			%a.btn.btn-block.btn-primary{:href=>"/providers/show", :target=>"_blank"}
+				Preview
+			%a.btn.btn-block.btn-wire{:href=>"/provider/profileplus"}
+				Done
+
+
+
+
+//add location modal
+#addLocationModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header.no-border-bottom.text-center
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} 
+						×
+				%h4.modal-title.text-center.no-margin-bottom.bold-font-name
+					Add location
+			.modal-body.no-padding-bottom
+				.row.margin-bottom
+					.col-sm-7
+						.row
+							.col-sm-12
+								.form-group
+									%label.bold-label
+										Location name (for your us eonly)
+									%input.form-control{:type=>"text",:placeholder=>"Dental Express"}
+						.row
+							.col-sm-12
+								.form-group
+									%label.bold-label
+										Street address
+									%input.form-control{:type=>"text",:placeholder=>"123 Place way"}
+						.row
+							.col-sm-12
+								.form-group
+									%label.bold-label
+										City
+									%input.form-control{:type=>"text",:placeholder=>"Manhattan"}
+						.row
+							.col-sm-8
+								.form-group
+									%label.bold-label
+										State
+									%select.form-control
+										%option
+											Select a state
+							.col-sm-4
+								.form-group
+									%label.bold-label
+										Zip
+									%input.form-control{:type=>"text",:placeholder=>"99999"}
+					.col-sm-5
+						%img.img-responsive{:src=>"/Content/images/tmp/map_add_location.png"}
+				.row.margin-bottom
+					.col-sm-12
+						%label.bold-label.margin-bottom
+							Hours
+							%a{:href=>"#"}
+								Show hours
+								%i.fa.fa-chevron-up
+						.row
+							.col-xs-2
+								.form-group
+									%label.bold-label
+										Sunday
+							.col-xs-2
+								.checkbox.full-width{:style=>"position:relative; top:-10px;"}
+									%input.full-width{:type=>"checkbox", "data-toggle"=>"toggle"}
+							.col-xs-8
+								%p
+									Closed
+						-6.times do
+							.row
+								.col-xs-2
+									.form-group
+										%label.bold-label
+											Monday
+								.col-xs-2
+									.checkbox.full-width{:style=>"position:relative; top:-10px;"}
+										%input.full-width{:type=>"checkbox", :checked=>"checked", "data-toggle"=>"toggle"}
+								.col-xs-8
+									.row
+										.col-xs-5
+											%select.form-control
+												%option
+													9:00am
+										.col-xs-1
+											%p.text-center
+												:escaped
+													-
+										.col-xs-5
+											%select.form-control
+												%option
+													9:00am
+										.col-xs-1
+
+
+			.modal-footer.no-border-top.text-center.no-padding-top.padding-bottom
+				.row
+					.col-lg-12
+						%a.btn.btn-link{:href=>"#", "data-dismiss" => "modal"}
+							Cancel
+						%a.btn.btn-primary{:href=>"#", "data-dismiss" => "modal"}
+							Add
+

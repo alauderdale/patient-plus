@@ -1,0 +1,48 @@
+;;;
+	"layout": "provider",
+	"title": "Endorsements"
+;;;
+
+.main-content
+	.subheader
+		.subheader-inner
+			%p.subjeader-title
+				%a{:href=>"/provider/profileplus"}
+					%i.fa.fa-arrow-left.quarter-margin-right
+				Endorsements
+			.autosaved
+				%h5.light-text-color
+					Autosaved
+	.main-content-inner
+		%p.light-text-color
+			Text explaining what this section is and why it's important.
+		.row.double-margin-bottom.clearfix
+			.col-sm-12
+				.form-group
+					%label.bold-label
+						Endorsements
+						%i.fa.fa-info-circle.cursor-pointer{"data-toggle"=>"tooltip", :title=>"I'm a helpful tooltip explaining what this field is used for."}
+					-4.times do
+						.item-added
+							.row
+								.col-xs-8
+									%input.form-control{:type=>"text"}
+								.col-xs-4
+									%h4{:style=>"margin-top:4px;"}
+										%a.extra-light-text-color.margin-right{:href=>"#"}
+											%i.fa.fa-align-justify
+										%a.extra-light-text-color{:href=>"#"}
+											%i.fa.fa-trash-o
+					%a.btn.btn-default.btn-sm{:href=>"#"}
+						+ Add
+
+			
+
+//begin sidebar
+.provider-sidebar
+	.sidebar-inner
+		.sidebar-menu
+			%a.btn.btn-block.btn-primary{:href=>"/providers/show", :target=>"_blank"}
+				Preview
+			%a.btn.btn-block.btn-wire{:href=>"/provider/profileplus"}
+				Done
