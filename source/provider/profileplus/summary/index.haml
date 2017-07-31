@@ -1,0 +1,85 @@
+;;;
+	"layout": "provider",
+	"title": "Locations"
+;;;
+
+.main-content
+	.subheader
+		.subheader-inner
+			%p.subjeader-title
+				%a{:href=>"/provider/profileplus"}
+					%i.fa.fa-arrow-left.quarter-margin-right
+				Locations
+			.autosaved
+				%h5.light-text-color
+					Autosaved
+	.main-content-inner
+		%p.light-text-color
+			Text explaining what this section is and why it's important.
+		.row
+			.col-sm-12
+				.form-group
+					%label.bold-label
+						Company name
+					%input.form-control{:type=>"text",:placeholder=>"Dental Express"}
+		.row
+			.col-md-3
+				.form-group
+					%label.bold-label
+						First name
+					%input.form-control{:type=>"text",:placeholder=>"John"}
+			.col-md-3
+				.form-group
+					%label.bold-label
+						Middle initial
+					%input.form-control{:type=>"text",:placeholder=>"M"}
+			.col-md-4
+				.form-group
+					%label.bold-label
+						Last name
+					%input.form-control{:type=>"text",:placeholder=>"Doe"}
+			.col-md-2
+				.form-group
+					%label.bold-label
+						Suffix
+					%input.form-control{:type=>"text",:placeholder=>"DOS"}
+		.row
+			.col-md-12
+				.form-group
+					%label.bold-label
+						Primary phone
+					%input.form-control{:type=>"text",:placeholder=>"444-444-4444"}
+		.row
+			.col-md-12
+				.form-group
+					%label.bold-label
+						Email
+					%input.form-control{:type=>"text",:placeholder=>"john@doe.com"}
+		.row
+			.col-md-6
+				.form-group
+					%label.bold-label
+						License number
+					%input.form-control{:type=>"text",:placeholder=>"MD4445555555"}
+			.col-md-6
+				.form-group
+					%label.bold-label
+						State
+					%select.form-control
+						%option
+							Select a state
+						%option
+							Colorado
+						%option
+							New York
+
+			
+
+//begin sidebar
+.provider-sidebar
+	.sidebar-inner
+		.sidebar-menu
+			%a.btn.btn-block.btn-primary{:href=>"/providers/show", :target=>"_blank"}
+				Preview
+			%a.btn.btn-block.btn-wire{:href=>"/provider/profileplus"}
+				Done

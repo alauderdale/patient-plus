@@ -107,3 +107,7 @@ img{
   background-color:$primary-color;
   @extend %white_text;
 }
+
+.cursor-pointer{
+  cursor:pointer;
+}

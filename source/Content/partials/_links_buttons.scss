@@ -14,6 +14,7 @@ a{
 	font-family:$medium-font-name;
 	@include transition-duration(0);
 	padding:12px 16px;
+	min-width:100px;
 	&:active{
 		box-shadow:none;
 	}
@@ -30,6 +31,13 @@ a{
 			border-color:$link-color;
 			background-color:white;
 			color:$link-hover-color;
+		}
+	}
+	&.btn-wire{
+		border-color:tint($link-color,30%);
+		color:$primary-color;
+		&:hover{
+			border-color:$link-color;
 		}
 	}
 	&.btn-info{

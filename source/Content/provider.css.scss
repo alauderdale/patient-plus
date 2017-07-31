@@ -3,6 +3,7 @@
 @import "lib/fancybox/jquery.fancybox.css";
 @import "lib/font-awesome.css";
 @import "lib/bootstrap.css";
+@import "lib/bootstrap-switch.css";
 @import "lib/animate.css";
 @import "lib/lightslider.css";
 @import "lib/lightgallery.css";
@@ -35,10 +36,6 @@
 @import "partials/labels";
 
 //// elements
-@import "elements/header";
-@import "elements/footer";
-@import "elements/home";
+@import "elements/provider/header";
 @import "elements/animations";
-@import "elements/providers";
-@import "elements/search";
 @import "elements/bootstrap-overrides";
