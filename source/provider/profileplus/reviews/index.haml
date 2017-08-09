@@ -1,0 +1,86 @@
+;;;
+	"layout": "provider",
+	"title": "Reviews"
+;;;
+
+.main-content
+	.subheader
+		.subheader-inner
+			%p.subjeader-title
+				%a{:href=>"/provider/profileplus"}
+					%i.fa.fa-arrow-left.quarter-margin-right
+				Reviews
+	.main-content-inner
+		%p.light-text-color
+			Text explaining what this section is and why it's important.
+		.margin-top
+			%p
+				Overall average
+				%span.bold-font-name
+					4.5
+		.row
+			.col-lg-12
+				=partial"/provider/profileplus/reviews/review-table"
+
+
+
+
+			
+
+//begin sidebar
+.provider-sidebar
+	.sidebar-inner
+		.sidebar-menu
+			%a.btn.btn-block.btn-primary{:href=>"/providers/show", :target=>"_blank"}
+				Preview
+			%a.btn.btn-block.btn-wire{:href=>"/provider/profileplus"}
+				Done
+
+
+
+
+//add location modal
+#reviewModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header.no-border-bottom.text-center
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} 
+						×
+				%h4.modal-title.text-center.no-margin-bottom.bold-font-name
+					Review
+			.modal-body.no-padding-bottom
+				.row.margin-bottom
+					.col-sm-12
+						.row
+							.col-sm-12
+								%p.quarter-margin-bottom
+									%span.light-text-color.medium-font-name
+										Reviewer:
+									=lorem.name
+								%p.no-margin-bottom
+									%span.light-text-color.medium-font-name
+										Submitted:
+									=lorem.date
+						.row
+							.col-lg-12
+								%hr
+
+						.row.half-margin-bottom
+							-5.times do
+								.col-md-4.col-xs-6
+									.margin-bottom
+										%p.no-margin-bottom
+											Beside manner
+										=partial"providers/stars"
+						.row
+							.col-lg-12
+								%p
+									=lorem.paragraphs(1)
+
+			.modal-footer.no-border-top.text-center.no-padding-top.padding-bottom
+				.row
+					.col-lg-12
+						%a.btn.btn-primary{:href=>"#", "data-dismiss" => "modal"}
+							Done
+

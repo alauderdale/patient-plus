@@ -1,0 +1,72 @@
+;;;
+	"layout": "provider",
+	"title": "Media"
+;;;
+
+.main-content
+	.subheader
+		.subheader-inner
+			%p.subjeader-title
+				%a{:href=>"/provider/profileplus"}
+					%i.fa.fa-arrow-left.quarter-margin-right
+				Images and video
+	.main-content-inner
+		%p.light-text-color
+			Text explaining what this section is and why it's important.
+		.margin-top.media-grid
+			.row
+				-10.times do
+					.col-sm-3
+						.media-wrapper{:href=>"#"}
+							%img{:alt => "media", :src => "/Content/images/tmp/office_1.jpg", :width=>"144"}
+							.img-toolbar.text-right
+								%a{:href=>"#"}
+									%i.fa.fa-trash-o
+						
+			.row.margin-top
+				%a.btn.btn-default.btn-sm{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#addMediaModal"}
+					+ Add media
+
+
+
+
+			
+
+//begin sidebar
+.provider-sidebar
+	.sidebar-inner
+		.sidebar-menu
+			%a.btn.btn-block.btn-primary{:href=>"/providers/show", :target=>"_blank"}
+				Preview
+			%a.btn.btn-block.btn-wire{:href=>"/provider/profileplus"}
+				Done
+
+
+
+
+//add media modal
+#addMediaModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header.no-border-bottom.text-center
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} 
+						×
+				%h4.modal-title.text-center.no-margin-bottom.bold-font-name
+					Add photos
+			.modal-body
+				.upload-container.text-center
+					.upload-helper
+						%h3.medium-font-name.quarter-margin-bottom
+							Drag photos here
+						%p.quarter-margin-bottom
+							Or if you like
+						%a.btn.btn-primary
+							Select photos from your computer
+
+			.modal-footer.no-border-top.text-center.no-padding-top.padding-bottom
+				.row
+					.col-lg-12
+						%a.btn.btn-link{:href=>"#", "data-dismiss" => "modal"}
+							Cancel
+

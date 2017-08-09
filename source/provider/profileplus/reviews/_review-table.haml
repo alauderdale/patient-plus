@@ -1,0 +1,37 @@
+.pp-table-container
+	%table.table
+		%thead
+			%tr
+				%th
+					User
+				%th
+					Submitted
+				%th
+					Rating
+				%th
+					
+		%tbody
+			-20.times do
+				%tr
+					%td
+						%span.medium-font-name
+							= lorem.name
+					%td
+						=lorem.date
+					%td
+						.rating
+							%span.star.full
+								%i.fa.fa-star
+							%span.star.full
+								%i.fa.fa-star
+							%span.star.full
+								%i.fa.fa-star
+							%span.star.full
+								%i.fa.fa-star
+							%span.star
+								%i.fa.fa-star
+					%td
+						.pull-right
+							%a.btn.btn-primary.btn-mini{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#reviewModal"}
+								View
+							

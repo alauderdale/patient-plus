@@ -1,0 +1,121 @@
+;;;
+	"layout": "provider",
+	"title": "Services"
+;;;
+
+.main-content
+	.subheader
+		.subheader-inner
+			%p.subjeader-title
+				%a{:href=>"/provider/profileplus"}
+					%i.fa.fa-arrow-left.quarter-margin-right
+				Services
+			.autosaved
+				%h5.light-text-color
+					Autosaved
+	.main-content-inner
+		%p.light-text-color
+			Text explaining what this section is and why it's important.
+		.double-margin-top
+			%h5.text-center.bold-font-name.extra-light-text-color
+				FEATURED SERVICES
+			-8.times do
+				.panel.half-margin-bottom
+					.half-padded
+						.pull-left
+							.pull-left.half-margin-right
+								%img{:alt => "headshot", :src => "/Content/images/default-banner.png", :width=>"150"}
+							.pull-left
+								.quarter-margin-top
+									%h5.no-margin-top.no-margin-bottom.medium-font-name
+										Whitening
+									%h5.no-margin-bottom.no-margin-top
+										Comfort and technology
+						.pull-right
+							%h3.no-margin-bottom.quarter-margin-top
+								%a.light-text-color.half-margin-right.extra-light-text-color{:href=>"#"}
+									%i.fa.fa-arrow-up
+								%a.light-text-color.half-margin-right.extra-light-text-color{:href=>"#"}
+									%i.fa.fa-arrow-down
+								%a.light-text-color.half-margin-right{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#addServiceModal"}
+									%i.fa.fa-pencil
+								%a.light-text-color.half-margin-right{:href=>"#"}
+									%i.fa.fa-trash-o
+						.clearfix	
+			%a.btn.btn-default.btn-sm{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#addServiceModal"}
+				+ Add
+
+
+
+
+			
+
+//begin sidebar
+.provider-sidebar
+	.sidebar-inner
+		.sidebar-menu
+			%a.btn.btn-block.btn-primary{:href=>"/providers/show", :target=>"_blank"}
+				Preview
+			%a.btn.btn-block.btn-wire{:href=>"/provider/profileplus"}
+				Done
+
+
+
+
+//add location modal
+#addServiceModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header.no-border-bottom.text-center
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} 
+						×
+				%h4.modal-title.text-center.no-margin-bottom.bold-font-name
+					Add service
+			.modal-body.no-padding-bottom
+				.row.margin-bottom
+					.col-sm-12
+						.row.margin-bottom.half-margin-top
+							.col-sm-12
+								.pull-left
+									.pull-left.half-margin-right
+										%img{:alt => "headshot", :src => "/Content/images/default-banner.png", :width=>"150"}
+									.pull-left
+										.quarter-margin-top
+											%a.btn.btn-primary.btn-mini.quarter-margin-bottom{:href=>"#"}
+												Add image
+											%h5.no-margin-bottom.no-margin-top
+												Suggested size is 400 x 600
+						.row
+							.col-sm-12
+								.form-group
+									%label.bold-label
+										Service name
+									%input.form-control{:type=>"text",:placeholder=>"John Doe"}
+						.row
+							.col-sm-12
+								.form-group
+									%label.bold-label
+										Category
+									%select.form-control
+										%option
+											Select a category
+						.row
+							.col-sm-12
+								.form-group
+									%label.bold-label
+										Description
+									%textarea.form-control{:rows=>"4"}
+									.counter
+										.pull-right
+											%h5.medium-font-name
+												0/300
+
+			.modal-footer.no-border-top.text-center.no-padding-top.padding-bottom
+				.row
+					.col-lg-12
+						%a.btn.btn-link{:href=>"#", "data-dismiss" => "modal"}
+							Cancel
+						%a.btn.btn-primary{:href=>"#", "data-dismiss" => "modal"}
+							Add
+

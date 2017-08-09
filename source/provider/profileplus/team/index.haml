@@ -1,0 +1,130 @@
+;;;
+	"layout": "provider",
+	"title": "Team"
+;;;
+
+.main-content
+	.subheader
+		.subheader-inner
+			%p.subjeader-title
+				%a{:href=>"/provider/profileplus"}
+					%i.fa.fa-arrow-left.quarter-margin-right
+				Team
+			.autosaved
+				%h5.light-text-color
+					Autosaved
+	.main-content-inner
+		%p.light-text-color
+			Text explaining what this section is and why it's important.
+		.margin-top
+			-2.times do
+				.panel.half-margin-bottom
+					.half-padded
+						.pull-left
+							.pull-left.half-margin-right
+								%img{:alt => "headshot", :src => "/Content/images/default-deadshot.png", :width=>"40"}
+							.pull-left
+								%h5.no-margin-top.no-margin-bottom.medium-font-name
+									=lorem.name
+								%h5.no-margin-bottom.no-margin-top
+									I'm an exerpt from the description of this team member ...
+						.pull-right
+							%h3.no-margin-bottom.quarter-margin-top
+								%a.light-text-color.half-margin-right{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#addteamMemberModal"}
+									%i.fa.fa-pencil
+								%a.light-text-color.half-margin-right{:href=>"#"}
+									%i.fa.fa-trash-o
+						.clearfix	
+			%a.btn.btn-default.btn-sm{:href => "javaScript:void(0);","data-toggle"=>"modal","data-target"=>"#addteamMemberModal"}
+				+ Add
+
+
+
+
+			
+
+//begin sidebar
+.provider-sidebar
+	.sidebar-inner
+		.sidebar-menu
+			%a.btn.btn-block.btn-primary{:href=>"/providers/show", :target=>"_blank"}
+				Preview
+			%a.btn.btn-block.btn-wire{:href=>"/provider/profileplus"}
+				Done
+
+
+
+
+//add location modal
+#addteamMemberModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header.no-border-bottom.text-center
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} 
+						×
+				%h4.modal-title.text-center.no-margin-bottom.bold-font-name
+					Add team member
+			.modal-body.no-padding-bottom
+				.row.margin-bottom
+					.col-sm-12
+						.row.margin-bottom.half-margin-top
+							.col-sm-12
+								.pull-left
+									.pull-left.half-margin-right
+										%img{:alt => "headshot", :src => "/Content/images/default-deadshot.png", :width=>"60"}
+									.pull-left
+										.quarter-margin-top
+											%a.btn.btn-primary.btn-mini.quarter-margin-bottom{:href=>"#"}
+												Add headshot
+											%h5.no-margin-bottom.no-margin-top
+												Suggested size is 400 x 600
+						.row
+							.col-sm-12
+								.form-group
+									%label.bold-label
+										Full name
+									%input.form-control{:type=>"text",:placeholder=>"John Doe"}
+						.row
+							.col-sm-12
+								.form-group
+									%label.bold-label
+										Areas of expertise (comma seporated)
+									%input.form-control{:type=>"text",:placeholder=>"Periodontics, Dental Implants, LANAP laser gum surgery"}
+						.row
+							.col-sm-12
+								.form-group
+									%label.bold-label
+										Bio
+									%textarea.form-control{:rows=>"4"}
+									.counter
+										.pull-right
+											%h5.medium-font-name
+												0/300
+						.row
+							.col-sm-12
+								.form-group
+									%label.bold-label
+										Email
+									%input.form-control{:type=>"text",:placeholder=>"john@doe.com"}
+							.col-sm-12
+								.form-group
+									%label.bold-label
+										Facebook URL
+									%input.form-control{:type=>"text",:placeholder=>""}
+							.col-sm-12
+								.form-group
+									%label.bold-label
+										Twitter URL
+									%input.form-control{:type=>"text",:placeholder=>""}
+				
+
+
+			.modal-footer.no-border-top.text-center.no-padding-top.padding-bottom
+				.row
+					.col-lg-12
+						%a.btn.btn-link{:href=>"#", "data-dismiss" => "modal"}
+							Cancel
+						%a.btn.btn-primary{:href=>"#", "data-dismiss" => "modal"}
+							Add
+

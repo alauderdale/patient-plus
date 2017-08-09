@@ -1,0 +1,14 @@
+.rating{
+	.star{
+		color:$light-gray-color;
+		&.full{
+			i{
+				color: $primary-color
+			}
+		}
+	}
+	h6{
+		margin:0;
+		line-height: 1.5rem;
+	}
+}
