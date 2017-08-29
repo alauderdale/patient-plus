@@ -1,8 +1,12 @@
 %nav.navbar.navbar-default.primary-nav
 	.container-fluid
 		.pull-left
-			%a.navbar-brand{:href => "/search"}
+			%a.navbar-brand{:href => "/"}
 				%img{:alt => "Brand", :src => "/Content/images/logo@2x.png", :width=>"144"}
+			%ul.nav.navbar-nav
+				%li{:style=>"position:relative; top:4px;"}
+					%a{:href=>"/search"}
+						Find a dentist
 		.pull-right
 			%p.navbar-text
 				%a.navbar-link{:href => "/signin"} 

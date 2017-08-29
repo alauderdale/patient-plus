@@ -1,3 +1,82 @@
-%section.text-center
-	%a.btn.btn-primary{:href=>"/search"}
-		Go!
+:css
+	body{
+		background:white;
+	}
+%section.girl-section
+	.container
+		.row
+			.col-md-6
+				.text-box
+					%h1.link-color.medium-font-name
+						Increase production 20% without doing more dentistry
+					%p
+						PatientPlus is a market network that will increase production and grow your practice network through home delivery of your recommended home care products experience.
+					.row.margin-top
+						.col-sm-6
+							%a.btn.btn-lg.btn-orange.btn-block{:href=>"#"}
+								Fond out how
+							%h5.text-center.light-text-color
+								%small
+									Now accepting dentists in NY, NJ, CT.
+			.col-md-6
+				/ .position-relative
+				/ 	%img.full-width.home-girl{:src=>"/Content/images/market/woman_home2.png"}
+%section.invert-section.bg-secondary
+	.container
+		.row
+			.col-sm-1
+			.col-sm-10.text-center
+				.padding-top.padding-bottom
+					%p.lead.no-marign-top.no-margin-bottom
+						PatientPlus brings the most powerful technologies of our day to dental practices interested in a more efficient and productive way to connect with new and prospective patients. Build a deeper connection through personalized product recommendations that support your recommended home care and project trust and influence by leveraging your peer networkfor endorsements. Get started risk free and you’ll never look back.  
+					%a.btn.btn-lg.btn-wire-white.get-started-btn{:href=>"#"}
+						Get started
+			.col-sm-1
+}
+%section
+	.container
+		.double-padding-top.padding-bottom
+			.row
+				.col-sm-4.text-center
+					%img.max-width.margin-auto{:src=>"/Content/images/market/star-home.png"}
+					%h2.link-color.medium-font-name
+						ProfilePlus
+					%h3
+						Dynamic Online Presence
+					%p.light-text-color
+						Beautiful, mobile and connected to build authority and trust online
+				.col-sm-4.text-center
+					%img.max-width.margin-auto{:src=>"/Content/images/market/heart-home.png"}
+					%h2.link-color.medium-font-name
+						Essentials
+					%h3
+						Home care, delivered
+					%p.light-text-color
+						Convenient, personalized product subscriptions that support recommended home care
+				.col-sm-4.text-center
+					%img.max-width.margin-auto{:src=>"/Content/images/market/perks-home.png"}
+					%h2.link-color.medium-font-name
+						Perks
+					%h3
+						Hygiene Membership
+					%p.light-text-color
+						An insurance alternative that simplifies how your patients get the care they need
+%section
+	.container
+		.row
+			.col-lg-12.text-center
+				.double-padding-bottom
+					%h2
+						Members you may know
+		.row
+			-3.times do
+				.col-sm-4.text-center
+					%img.max-width.margin-auto.img-circle{:src=>"/Content/images/tmp/dr.jpg", :width=>"150px"}
+					%p.margin-top.no-margin-bottom
+						%a{:href=>"#"}
+							Jonathan Goodman, DDS
+					%p
+						General Dentist
+
+
+

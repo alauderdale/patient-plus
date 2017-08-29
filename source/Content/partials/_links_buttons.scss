@@ -24,6 +24,14 @@ a{
 			background-color:tint($link-color,10%);
 		}
 	}
+	&.btn-orange{
+		color:white;
+		background-color:#f78c20;
+		border:none;
+		&:hover{
+			background-color:tint(#f78c20,10%);
+		}
+	}
 	&.btn-default{
 		border-color:shade($border-color,30%);
 		&:hover{
@@ -38,6 +46,14 @@ a{
 		&:hover{
 			border-color:$link-color;
 		}
+	}
+	&.btn-wire-white{
+		border-color:tint(white,30%);
+		color:white;
+		&:hover{
+			border-color:white;
+		}
+
 	}
 	&.btn-info{
 		background-color:$success-color;

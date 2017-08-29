@@ -1,0 +1,29 @@
+img.home-girl{
+	
+}
+
+.bg-secondary{
+	background-color:$secondary-color!important;
+}
+
+.girl-section{
+	padding:100px 0;
+	background:url(../Content/images/market/woman_home2.png) right bottom no-repeat;
+	// background-size:90%;
+	@include breakpoint(md) {
+    	padding:20px 0 20px 0!important;
+    	// background-size:150%;
+    	// background:none;
+    	.text-box{
+    		background:rgba(255,255,255,.9);
+    		padding:20px;
+    	}
+  	}
+}
+
+.get-started-btn{
+	font-size:26px;
+	padding:15px 80px;
+	border-width:2px;
+	margin-top:20px;
+}
